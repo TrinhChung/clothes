@@ -1,0 +1,27 @@
+{
+  "name": "clothpro",
+  "version": "0.1.0",
+  "homepage": ".",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "gh-pages -d out",
+    "replace-static": "replace-in-files --string \"/_next/static/\" --replacement \"./_next/static/\" out/index.html",
+    "replace-images": "replace-in-files --string \"/images/\" --replacement \"./images/\" out/index.html"
+  },
+  "dependencies": {
+    "gh-pages": "^6.2.0",
+    "next": "15.0.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "replace-in-file": "^8.2.0",
+    "replace-in-files-cli": "^3.0.0"
+  },
+  "devDependencies": {
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
