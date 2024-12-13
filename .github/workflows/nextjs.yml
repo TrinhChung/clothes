@@ -1,0 +1,53 @@
+name: Deploy Next.js App
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          npm install
+
+      # Build and Export Next.js app
+      - name: Build and Export Next.js app
+        run: |
+          npm run build
+
+      # Create .nojekyll file
+      - name: Create .nojekyll file
+        run: |
+          touch out/.nojekyll
+
+      # Debug the out folder
+      - name: Debug out folder
+        run: |
+          ls -la out
+
+       # Thiết lập remote URL để deploy lên GitHub Pages hoặc nơi khác
+      - name: Set up GitHub remote
+        run: |
+          git remote set-url origin https://git:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+      # Triển khai lên GitHub Pages
+      - name: Deploy to GitHub Pages
+        run: |
+          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
