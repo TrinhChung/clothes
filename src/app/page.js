@@ -32,8 +32,9 @@ export default function Home() {
             src="/Images/logo.png"
             width={40}
             height={40}
-            alt="Lan Chuẩn Logo"
+            alt="Logo Lan Chuẩn Clothes - Xưởng may chuyên nghiệp"
             className="h-10"
+            priority
           />
           <span className="text-xl font-bold text-[var(--main-yellow)] uppercase">
             Lan Chuẩn
