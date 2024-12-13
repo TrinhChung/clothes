@@ -1,7 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  images: { unoptimized: true },
+  images: {
+    localPatterns: [
+      {
+        pathname: "/images/**",
+        search: "",
+      },
+    ],
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
