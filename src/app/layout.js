@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content="https://clothpro.smartrent.id.vn/" />
         <meta
           property="og:image"
-          content="https://clothpro.smartrent.id.vn/Images/logo.png"
+          content="/Images/meta.jpg"
         />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Lan Chuẩn" />
@@ -65,7 +65,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:image"
-          content="https://clothpro.smartrent.id.vn/Images/logo.png"
+          content="https://clothpro.smartrent.id.vn/Images/meta.jpg"
         />
 
         <meta
@@ -83,8 +83,6 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="Xưởng may chuyên nghiệp tại Việt Nam."
         />
-        <meta property="og:image" content="/Images/logo.png" />
-        <meta property="og:url" content="https://clothpro.smartrent.id.vn/" />
         <link rel="canonical" href="https://clothpro.smartrent.id.vn/" />
         <meta
           name="google-site-verification"
