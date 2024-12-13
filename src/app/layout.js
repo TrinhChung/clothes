@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import Head from "next/head";
 import "./globals.css";
 
 // Đảm bảo đường dẫn đúng tới font
@@ -32,6 +33,31 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <title>Lan Chuẩn Clothes - Xưởng May Chuyên Nghiệp</title>
+        <meta
+          name="description"
+          content="Lan Chuẩn Clothes cung cấp dịch vụ may mặc chất lượng cao với giá cả phải chăng."
+        />
+        <meta
+          name="keywords"
+          content="may mặc, quần áo, thời trang, đồng phục học sinh, xưởng may tận gốc, tận gốc, xưởng may giá rẻ, xưởng may, Lan Chuẩn Clothes, Xưởng may Lan Chuẩn, lan chuan, Lan Chuan, Trịnh Văn Chung, TrinhChung"
+        />
+        <meta name="author" content="Lan Chuẩn Clothes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Lan Chuẩn Clothes" />
+        <meta
+          property="og:description"
+          content="Xưởng may chuyên nghiệp tại Việt Nam."
+        />
+        <meta property="og:image" content="/Images/logo.png" />
+        <meta property="og:url" content="https://clothpro.smartrent.id.vn/" />
+        <link rel="canonical" href="https://clothpro.smartrent.id.vn/" />
+        <meta
+          name="google-site-verification"
+          content="d8P9gAOJ38enrUV5LA7GZ6iFvDnywmEsuGKx7NdsGDo"
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         style={{

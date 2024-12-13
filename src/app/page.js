@@ -1,29 +1,7 @@
 import Image from "next/image";
-import Head from "next/head";
 export default function Home() {
   return (
     <div className="grid grid-rows-[auto_auto_1fr_auto] items-center justify-items-center min-h-screen p-8 sm:p-20 gap-16 font-[family-name:var(--font-geist-sans)] bg-[var(--background)] text-[var(--foreground)]">
-      <Head>
-        <title>Lan Chuẩn Clothes - Xưởng May Chuyên Nghiệp</title>
-        <meta
-          name="description"
-          content="Lan Chuẩn Clothes cung cấp dịch vụ may mặc chất lượng cao với giá cả phải chăng."
-        />
-        <meta
-          name="keywords"
-          content="may mặc, quần áo, thời trang, đồng phục học sinh, xưởng may tận gốc, tận gốc, xưởng may giá rẻ, xưởng may, Lan Chuẩn Clothes, Xưởng may Lan Chuẩn, lan chuan, Lan Chuan, Trịnh Văn Chung, TrinhChung"
-        />
-        <meta name="author" content="Lan Chuẩn Clothes" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content="Lan Chuẩn Clothes" />
-        <meta
-          property="og:description"
-          content="Xưởng may chuyên nghiệp tại Việt Nam."
-        />
-        <meta property="og:image" content="/Images/logo.png" />
-        <meta property="og:url" content="https://clothpro.smartrent.id.vn/" />
-        <link rel="canonical" href="https://clothpro.smartrent.id.vn/" />
-      </Head>
       {/* Navbar Section */}
       <nav className="row-start-1 w-full flex justify-between items-center bg-[var(--background)] shadow-md p-4 fixed top-0 z-50">
         {/* Logo */}
