@@ -79,12 +79,3 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
-
-       # Thiết lập remote URL để deploy lên GitHub Pages hoặc nơi khác
-      - name: Set up GitHub remote
-        run: |
-          git remote set-url origin https://git:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-      # Triển khai lên GitHub Pages
-      - name: Deploy to GitHub Pages
-        run: |
-          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
