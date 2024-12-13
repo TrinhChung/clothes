@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d out -f -t",
+    "deploy": "echo 'true' > ./out/.nojekyll &&gh-pages -d out -f -t",
     "replace-static": "replace-in-files --string \"/_next/static/\" --replacement \"./_next/static/\" out/index.html",
     "replace-images": "replace-in-files --string \"/images/\" --replacement \"./images/\" out/index.html"
   },

@@ -33,16 +33,6 @@ jobs:
         run: |
           npm run build
 
-      # Create .nojekyll file
-      - name: Create .nojekyll file
-        run: |
-          touch out/.nojekyll
-
-      # Debug the out folder
-      - name: Debug out folder
-        run: |
-          ls -la out
-
        # Thiết lập remote URL để deploy lên GitHub Pages hoặc nơi khác
       - name: Set up GitHub remote
         run: |
