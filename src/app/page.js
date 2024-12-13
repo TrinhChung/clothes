@@ -8,7 +8,7 @@ export default function Home() {
         {/* Logo */}
         <div className="flex items-center gap-4">
           <Image
-            src="/images/logo.png"
+            src="/Images/logo.png"
             width={40}
             height={40}
             alt="Lan Chuẩn Logo"
