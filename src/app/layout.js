@@ -35,6 +35,39 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         <title>Lan Chuẩn Clothes - Xưởng May Chuyên Nghiệp</title>
+        {/* Open Graph Meta Tags */}
+        <meta
+          property="og:title"
+          content="Lan Chuẩn - Xưởng may chuyên nghiệp"
+        />
+        <meta
+          property="og:description"
+          content="Chúng tôi cung cấp dịch vụ may đo quần áo thời trang chất lượng cao với giá hợp lý."
+        />
+        <meta property="og:url" content="https://clothpro.smartrent.id.vn/" />
+        <meta
+          property="og:image"
+          content="https://clothpro.smartrent.id.vn/Images/logo.png"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Lan Chuẩn" />
+        <meta property="og:locale" content="vi_VN" />
+
+        {/* Twitter Cards Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Lan Chuẩn - Xưởng may chuyên nghiệp"
+        />
+        <meta
+          name="twitter:description"
+          content="Chúng tôi cung cấp dịch vụ may đo quần áo thời trang chất lượng cao với giá hợp lý."
+        />
+        <meta
+          name="twitter:image"
+          content="https://clothpro.smartrent.id.vn/Images/logo.png"
+        />
+
         <meta
           name="description"
           content="Lan Chuẩn Clothes cung cấp dịch vụ may mặc chất lượng cao với giá cả phải chăng."
