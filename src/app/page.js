@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 export default function Home() {
   return (
@@ -55,7 +56,10 @@ export default function Home() {
         <p className="text-lg sm:text-xl text-[var(--main-green)]">
           Chất lượng vượt trội - Dịch vụ chuyên nghiệp - Giá thành hợp lý
         </p>
-        <button className="mt-4 px-6 py-2 bg-[var(--main-yellow)] text-[var(--main-jean)] rounded-lg hover:bg-[var(--main-yellow)]">
+        <button
+          className="mt-4 px-6 py-2 bg-[var(--main-yellow)] text-[var(--main-jean)] rounded-lg hover:bg-[var(--main-yellow)]"
+          onClick={() => (window.location.href = "tel:+84965628195")} // Số điện thoại cần gọi
+        >
           Liên Hệ Ngay
         </button>
       </header>

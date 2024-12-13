@@ -75,8 +75,25 @@ export default function RootLayout({ children }) {
             <h2 className="text-3xl font-bold text-[var(--main-yellow)] uppercase pb-4 pt-8">
               Xưởng may Lan Chuẩn
             </h2>
-            <p className="text-white">Số điện thoại: 0965628195</p>
-            <p className="text-white">Email: chungtrinh2k2@gmail.com</p>
+            <p className="text-white">
+              Số điện thoại:{" "}
+              <a
+                href="tel:+84965628195"
+                className="text-yellow-500 font-semibold hover:text-yellow-400"
+              >
+                0965628195
+              </a>
+            </p>
+            <p className="text-white">
+              Email:{" "}
+              <a
+                href="mailto:chungtrinh2k2@gmail.com"
+                className="text-yellow-500 font-semibold hover:text-yellow-400"
+              >
+                chungtrinh2k2@gmail.com
+              </a>
+            </p>
+
             <p className="text-white">
               &copy; 2024 Xưởng May Lan Chuẩn. All rights reserved.
             </p>
