@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
         {/* Footer Section */}
         <footer
           id="contact"
-          className="w-full flex flex-col lg:flex-row gap-6 text-left bg-[var(--main-green)] py-6 px-16"
+          className="w-full flex flex-col lg:flex-row gap-6 text-left bg-[var(--main-green)] py-6 px-4 sm:px-8 lg:px-16"
         >
           {/* Cột đầu tiên - Thông tin liên hệ */}
           <div className="flex-1 flex flex-col gap-4">

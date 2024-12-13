@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="grid grid-rows-[auto_auto_1fr_auto] items-center justify-items-center min-h-screen p-8 sm:p-20 gap-16 font-[family-name:var(--font-geist-sans)] bg-[var(--background)] text-[var(--foreground)]">
@@ -21,7 +22,7 @@ export default function Home() {
         </div>
 
         {/* Navbar Links */}
-        <ul className="flex gap-8 text-[var(--main-green)] font-medium pr-[30px]">
+        <ul className="flex gap-8 text-[var(--main-green)] font-medium pr-[30px] hidden sm:flex">
           <li>
             <a href="#home" className="hover:text-[var(--main-yellow)]">
               Home
@@ -43,6 +44,8 @@ export default function Home() {
             </a>
           </li>
         </ul>
+        {/* Mobile Navbar toggle */}
+        <button className="sm:hidden text-[var(--main-yellow)]">☰</button>
       </nav>
 
       {/* Hero Section */}
