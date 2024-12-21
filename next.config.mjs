@@ -8,7 +8,7 @@ const nextConfig = {
         search: "",
       },
     ],
-    unoptimized: true,
+    unoptimized: false,
   },
 };
 

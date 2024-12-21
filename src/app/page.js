@@ -1,27 +1,12 @@
 "use client";
 
+import Banner from "@/components/Banner";
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[auto_auto_1fr_auto] items-center justify-items-center min-h-screen p-8
-     sm:p-20 gap-16 font-[family-name:var(--font-geist-sans)] bg-[var(--background)] text-[var(--foreground)]">
+    <>
+      <Banner/>
       {/* Hero Section */}
-      <header
-        id="home"
-        className="row-start-2 flex flex-col items-center text-center gap-4"
-      >
-        <h1 className="text-4xl sm:text-6xl font-bold text-[var(--main-yellow)]">
-          Xưởng may LAN CHUẨN
-        </h1>
-        <p className="text-lg sm:text-xl text-[var(--main-green)]">
-          Chất lượng vượt trội - Dịch vụ chuyên nghiệp - Giá thành hợp lý
-        </p>
-        <button
-          className="mt-4 px-6 py-2 bg-[var(--main-yellow)] text-[var(--main-jean)] rounded-lg hover:bg-[var(--main-yellow)]"
-          onClick={() => (window.location.href = "tel:+84965628195")} // Số điện thoại cần gọi
-        >
-          Liên Hệ Ngay
-        </button>
-      </header>
 
       {/* Main Content */}
       <main className="flex flex-col gap-16 row-start-3 w-full max-w-5xl">
@@ -74,6 +59,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-    </div>
+    </>
   );
 }

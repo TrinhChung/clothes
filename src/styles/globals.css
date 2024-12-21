@@ -23,3 +23,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
+
+@keyframes infiniteSlide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.animate-infinite-slide {
+  animation: infiniteSlide 10s linear infinite;
+  background-repeat: repeat-x;
+  /* Nếu bạn muốn hiệu ứng di chuyển ngang liên tục mà không bị gián đoạn */
+}
+
