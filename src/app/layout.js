@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
         {/* Navbar Section */}
         <Navbar />
         <div
-          className="grid grid-rows-[auto_auto_1fr_auto] items-center justify-items-center min-h-screen p-8
+          className="grid grid-rows-[auto_auto_1fr_auto] items-center justify-items-center min-h-screen
              sm:p-20 gap-16 font-[family-name:var(--font-geist-sans)] bg-[var(--background)] text-[var(--foreground)]"
         >
           {children}
