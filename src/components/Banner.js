@@ -5,7 +5,7 @@ export default function Banner() {
       <div className="w-full flex flex-col justify-center items-center">
         <img
           src="/Images/banner.png"
-          alt="Lan Chuẩn Clothes Banner"
+          alt="Fabricon Banner"
           className="object-contain h-auto lg:h-[60vh] z-20"
         />
         <header

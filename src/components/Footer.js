@@ -7,7 +7,7 @@ export default function Footer() {
       {/* Cột đầu tiên - Thông tin liên hệ */}
       <div className="flex-1 flex flex-col gap-4">
         <h2 className="text-3xl font-bold text-[var(--main-yellow)] uppercase pb-4 pt-8">
-          Xưởng may Lan Chuẩn
+          Xưởng may Fabricon
         </h2>
         <p className="text-white">
           Số điện thoại:{" "}
@@ -29,7 +29,7 @@ export default function Footer() {
         </p>
 
         <p className="text-white">
-          &copy; 2024 Xưởng May Lan Chuẩn. All rights reserved.
+          &copy; 2024 Xưởng may LAN CHUẨN. All rights reserved.
         </p>
       </div>
 

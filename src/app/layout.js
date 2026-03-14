@@ -3,25 +3,25 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { geistMono, geistSans } from "@/utils/constantFont";
 export const metadata = {
-  title: "Lan Chuẩn Clothes - Xưởng May Chuyên Nghiệp",
+  title: "Fabricon - Xưởng May Chuyên Nghiệp",
   description:
     "Chúng tôi cung cấp dịch vụ may đo quần áo thời trang chất lượng cao với giá hợp lý.",
   openGraph: {
-    title: "Lan Chuẩn - Xưởng may chuyên nghiệp",
+    title: "Fabricon - Xưởng may chuyên nghiệp",
     description:
       "Chúng tôi cung cấp dịch vụ may đo quần áo thời trang chất lượng cao với giá hợp lý.",
-    url: "https://clothpro.smartrent.id.vn/",
+    url: "https://fabricon.noirsteed.com/",
     image: "/Images/meta.jpg",
     type: "website",
-    site_name: "Lan Chuẩn",
+    site_name: "Fabricon",
     locale: "vi_VN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lan Chuẩn - Xưởng may chuyên nghiệp",
+    title: "Fabricon - Xưởng may chuyên nghiệp",
     description:
       "Chúng tôi cung cấp dịch vụ may đo quần áo thời trang chất lượng cao với giá hợp lý.",
-    image: "https://clothpro.smartrent.id.vn/Images/meta.jpg",
+    image: "https://fabricon.noirsteed.com/Images/meta.jpg",
   },
   keywords: [
     "may mặc",
@@ -31,12 +31,12 @@ export const metadata = {
     "xưởng may tận gốc",
     "xưởng may giá rẻ",
     "xưởng may",
-    "Lan Chuẩn Clothes",
-    "Lan Chuan",
+    "Fabricon",
+    "fabricon",
   ],
-  author: "Lan Chuẩn Clothes",
+  author: "Fabricon",
   googleSiteVerification: "d8P9gAOJ38enrUV5LA7GZ6iFvDnywmEsuGKx7NdsGDo",
-  canonical: "https://clothpro.smartrent.id.vn/",
+  canonical: "https://fabricon.noirsteed.com/",
 };
 
 export default function RootLayout({ children }) {

@@ -18,12 +18,12 @@ export default function Navbar() {
           src="/Images/logo.png"
           width={40}
           height={40}
-          alt="Logo Lan Chuẩn Clothes - Xưởng may chuyên nghiệp"
+          alt="Logo Fabricon - Xưởng may chuyên nghiệp"
           className="h-10"
           priority
         />
         <span className="text-xl font-bold text-[var(--main-yellow)] uppercase">
-          Lan Chuẩn
+          Fabricon
         </span>
       </div>
 
@@ -61,9 +61,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <ul
-        className={`${
-          isMenuOpen ? "block" : "hidden"
-        } sm:hidden absolute top-16 left-0 w-full bg-[var(--background)] p-4 shadow-md`}
+        className={`${isMenuOpen ? "block" : "hidden"
+          } sm:hidden absolute top-16 left-0 w-full bg-[var(--background)] p-4 shadow-md`}
       >
         <li>
           <a
