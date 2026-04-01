@@ -173,7 +173,7 @@ export default function ServicesPage() {
 <div className="relative overflow-hidden rounded-3xl bg-primary py-20 px-12 text-center">
 {/*  Subtle texture background  */}
 <div className="absolute inset-0 opacity-10 mix-blend-overlay pointer-events-none">
-<img alt="Texture vải linen trắng dùng làm nền cho khối CTA dịch vụ" className="w-full h-full object-cover" data-alt="Soft abstract texture of folded white linen fabric with elegant shadows and light play" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhPvTxACQEwtTybGODxTEwf0Nj6Pj_7IUjsfLhRa4-TXDYzmajaGA-XuNolvXyMDlH0ALfgNLaFWrW96A5zdu33O7z8OSoSWRCNd8ad2EFtVtNrJPK5f5P2EdmkWt--kylM6DN73cqCsLUL38YTS3ztNC0685uM1B7gtmQmapc4RP-QboqERm1eacYv6mwO3T7JpvzPk0hYW6EvmiXhgT8lMN1TfFSVIq1JBtD8pMrdE89QoP376jULxSMe49FGiFNGiIaG6S5Z0U"/>
+<img alt="Texture vải linen trắng dùng làm nền cho khối CTA dịch vụ" className="w-full h-full object-cover" data-alt="Soft abstract texture of folded white linen fabric with elegant shadows and light play" src="/Images/google/services-cta-linen-texture.png"/>
 </div>
 <div className="relative z-10">
 <h2 className="font-headline text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">Sẵn sàng để nâng tầm <br className="hidden md:block"/> thương hiệu của bạn?</h2>

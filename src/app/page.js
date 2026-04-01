@@ -115,7 +115,7 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="relative group overflow-hidden rounded-xl h-[400px]">
-                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Cận cảnh máy may công nghiệp đang hoàn thiện sản phẩm thời trang" data-alt="Close up of professional sewing machine stitching a piece of beige suit fabric with precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGzY6vcrkMkp-ktbVHt9UMroEFcrGKYFndKagqFlEr0Gt6eSGsmy7RgrGoRXUnpGryqKXnvrx5toI_gVsUKN5US7oXkhgC39ON_XILLyl0IZEOEhJp1Ch4awtNsFV-uEoFD-NDMf0R8Bm25vNQLaYNTRUxUG5c0fJCS4tO-TSjmrgNiXu7-mYYjJjs8yAx-DxGN7ScUyfGGu_clnhcWReV72NLKVItBd85r4Jrj38NiLs3F5-XBvyfhF6528sduwPtaj-Cpqz5EJo"/>
+                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Cận cảnh máy may công nghiệp đang hoàn thiện sản phẩm thời trang" data-alt="Close up of professional sewing machine stitching a piece of beige suit fabric with precision" src="/Images/google/home-sewing-machine.png"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent p-8 flex flex-col justify-end">
                   <h3 className="text-2xl font-bold text-white font-headline mb-2">Sản xuất gia công</h3>
                   <p className="text-surface-variant font-body mb-4">Gia công theo đơn đặt hàng với số lượng linh hoạt, từ thiết kế đến thành phẩm.</p>
@@ -123,7 +123,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="relative group overflow-hidden rounded-xl h-[400px]">
-                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Bộ sưu tập đồng phục công sở treo trên giá trong xưởng may" data-alt="A row of neatly hung corporate uniforms and office attire in various shades of navy and grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeAHGyYRZdk34vMs96rdlnst1-Fa_NP9_-meCXpj7im18mKcKYB0AS02CNEv3lcD-8UVnvIPejmsXAs6PzeQyTNnUIR-C5lTcCPcoWOFZAVthcAXx68VVNr4YLgAikjislj7bA0IDw4bRBA5iseu87_G9XQ9xz4l3U-6RdZuMFWQGPvODXHFPGLs-AokmbBmid9YNp-s2JTpptQUXse2OOz4JDG-YvaPzr5eg4mLsxWv1WUCfIt6kJkZkyH81_8xSpbWIVw0zhpM4"/>
+                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Bộ sưu tập đồng phục công sở treo trên giá trong xưởng may" data-alt="A row of neatly hung corporate uniforms and office attire in various shades of navy and grey" src="/Images/google/home-office-uniforms.png"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent p-8 flex flex-col justify-end">
                   <h3 className="text-2xl font-bold text-white font-headline mb-2">May mặc đồng phục</h3>
                   <p className="text-surface-variant font-body mb-4">Cung cấp giải pháp đồng phục chuyên nghiệp cho doanh nghiệp, trường học và tổ chức.</p>

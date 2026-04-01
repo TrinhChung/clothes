@@ -19,11 +19,11 @@ const article = {
   readingTime: "10 phút đọc",
   category: "Cẩm nang sản xuất",
   heroImage:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuDjif5QvQEAXz6xVhJbaKbAa0zjCzlPxKjwPSBHs7KVlsaGlWdL031Y_TurwDCd_JyG7JIDt64NsxUWoBB_GhSJ1WcEc5nyZ5d1Pu46PWlwCp-izSO12iwFPrwGrgKpvjT8DTeHSx2pvR95XY7tcssp9aO61mrSHAAg74HBZ0vufQY4O4XkiaaagxN-g9w9aCXC8w1XMOze3tnL5TXBeUr2zLfOtFT5WEn4I8XUDMH5f4ra0IlciV3Y510OCL8YC0z_Nn4sCbgmao4",
+    "/Images/google/blog-hero-textile-workshop.png",
   workshopImage:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuCr2JXM6KM1FxECmHbvzgbUVZkUjU4r_kTWeOXk912Kdj6FT214k6-kEKiYn4ZHRIAzad8v6gXtUW4jtDLdSl6qsvjb9t3P7lQylSsiNLhQQ0hvjRWfCaqV0IkrboogivkwVdb9haeAmv5DWT6XecuGkwgW3IcIjZOz5mPI3L4A4GffdXI5WXWidXvtF1xhRW55z7kqVXsXDFxXLBX2MV4097nLDuvr-TkXvCFDgHMSdbJen1IWHPHqHXVO9nb3viQqgPD3w6x8BCo",
+    "/Images/google/blog-artisan-work.png",
   productImage:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuAwoBuYYuYUgze8epM03Dm_tZpmEzGDjDbUEQR-B5qCbo7mp46XIaDFZXsxsl95mlEkirnBlJfa4NWz38QSZ9G1bB9pKUQ3sE04CcP3il-Yrpwmmyu2pzmL8SBUHnKBZoxzGycljjeY0qit-WrNn8-zvSUKmsXpP48aIbD7QFBy0r6hBV5q1Y_-e22Rt8vO4gxuE5G8zji6K-9tE8dDnvX58fRVhgIYrHBy9cBsGv4GebPHzEFvzmocFE9_7-vrbSf7S0u9pPT4y8U",
+    "/Images/google/blog-finished-products.png",
 };
 
 const riskSignals = [

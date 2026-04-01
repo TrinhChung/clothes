@@ -53,7 +53,7 @@ export default function ServiceDetailPage() {
 {/*  Hero Section  */}
 <section className="relative h-[819px] flex items-center overflow-hidden bg-primary">
 <div className="absolute inset-0 z-0">
-<img alt="Xưởng may Lan Chuẩn" className="w-full h-full object-cover opacity-40" data-alt="industrial garment factory interior with rows of sewing machines and focused workers in soft natural workshop lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6OheD4-QpivtfDp5aewsMXgwCX32FVszMfsG-Ux0Fam7Dh5GeQCPoKCbKZ8sTdxvFbQu3oLmuNowccsDLlg4s-AvaeW8GLWUMybz_iNQivmWp4FBlPWu9tWvCY9ddU7_BLetViiO1Vnj6EVQstd3dOmskTK47GFpnMfsOmZYq_molypLZCQQbc1hh1xfMyE7h22HtOJfQyB5ghQh2aPaXnHsQb3kd1ONpY7sDq3N3BxqMCEiDxmOlZ6xwc0glz-jvpR1j7gPKhTU"/>
+<img alt="Xưởng may Lan Chuẩn" className="w-full h-full object-cover opacity-40" data-alt="industrial garment factory interior with rows of sewing machines and focused workers in soft natural workshop lighting" src="/Images/google/service-hero-factory.png"/>
 <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
 </div>
 <div className="relative z-10 px-8 md:px-16 max-w-4xl">
@@ -83,7 +83,7 @@ export default function ServiceDetailPage() {
 {/*  Service Card 1  */}
 <div className="bg-surface-container-lowest group hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
 <div className="h-48 overflow-hidden">
-<img alt="May gia công thời trang" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="close-up of a high-end designer blazer with intricate stitching details on a professional garment rack" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs4hIIrMVEthnye4eOFmDg3cncKUwBnvnUAZv-sOTReRuMo16gMXbympip0yGoGY1AVv7zDwwtDKkFvU1_YxLP3hsttC8R1ZDjvuAlwA1eA4woIvCrT0xx8wjvEo6fTnLq8IecWK6w0PGE71befuChmrKsVJwbHGRC5eyUH1AglDI_4j1wX_X9rcRoBJR0RtnKaSSU6J-zhRp9eDmUt9ZfkXFAjsUGHRlDQRw8vb4MSQj6JTYk2CWSwBIN5q2KvjqJ7lCkeTWR_MM"/>
+<img alt="May gia công thời trang" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="close-up of a high-end designer blazer with intricate stitching details on a professional garment rack" src="/Images/google/service-fashion-manufacturing.png"/>
 </div>
 <div className="p-8 flex-grow flex flex-col">
 <span className="material-symbols-outlined text-secondary mb-4 text-4xl">checkroom</span>
@@ -98,7 +98,7 @@ export default function ServiceDetailPage() {
 {/*  Service Card 2  */}
 <div className="bg-surface-container-lowest group hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
 <div className="h-48 overflow-hidden">
-<img alt="Sản xuất đồng phục" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="group of professional employees wearing high-quality matching corporate uniforms in a modern office lobby" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_Eenl-vMA-dVHSFVZEaMZtEzmBuCxHryIbWmx2aYInEEJWNWLWPl05za1D7qNkd7EIZdnEdzzUuVFccEQIV1kAChK_JmAeN24kOB3tFt5g0rg2gRt_JKmTo3xX2oSzgN6m9Gul0LwSh5XYomOK_chPGbHkO1Fo7mdx8vi2F2bGV3s62FkwXYBp62ZFQnNXRPhhwq5RTKn8kc0TxudZpNpkDO-iDkshEu-56cpOZt6OQ2JeerO0TGY2cXuwKv_PwH4HAIQFQTYa_M"/>
+<img alt="Sản xuất đồng phục" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="group of professional employees wearing high-quality matching corporate uniforms in a modern office lobby" src="/Images/google/service-uniform-production.png"/>
 </div>
 <div className="p-8 flex-grow flex flex-col">
 <span className="material-symbols-outlined text-secondary mb-4 text-4xl">business_center</span>
@@ -113,7 +113,7 @@ export default function ServiceDetailPage() {
 {/*  Service Card 3  */}
 <div className="bg-surface-container-lowest group hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
 <div className="h-48 overflow-hidden">
-<img alt="May mẫu &amp; Nhảy size" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="hands of a pattern maker using a ruler and chalk on fabric layout on a large drafting table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ-pGkRz8kAtOEbLEaF8ZztIJ1SBKz9JVSy3P9AdbrPG2zGhuTn26JfhKHQCfP6NcFKUCvs5VcFc0G0KhO1CIfHOJipXjI_6yUkBtzzgmN2n16_doVLEeIt5-j9BHarDsKfMsU0u112_BAAI4zf8Jsf5mgkxf9k-V_CW7z_XlmlZNVGBZ_qVNPfvSlMm2yqvgVOstW11RfqiiouMkuafN4JywVsIIywS4ZyzPBPFmVBFzhJLmb5_r5Rc_LA4eltSWX4LNRH-fhawQ"/>
+<img alt="May mẫu &amp; Nhảy size" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="hands of a pattern maker using a ruler and chalk on fabric layout on a large drafting table" src="/Images/google/service-pattern-making.png"/>
 </div>
 <div className="p-8 flex-grow flex flex-col">
 <span className="material-symbols-outlined text-secondary mb-4 text-4xl">straighten</span>
@@ -128,7 +128,7 @@ export default function ServiceDetailPage() {
 {/*  Service Card 4  */}
 <div className="bg-surface-container-lowest group hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
 <div className="h-48 overflow-hidden">
-<img alt="Tư vấn chất liệu" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="colorful rolls of high-quality textile fabrics stacked in a textile warehouse with soft side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4UswGlKyofBA5KeuZGcKxMH_e9NCP-j7PenCevlfOGk2xDYpyhh9WlXBBmSALXloY_3Q5o3B-1pUlskB_luJXLBTF0FhuqNUfcQ8YuMhG7k0yN5M2yq0lcCj52CnHgdDSYrtCdBMl2w52IzusfMPFEYSza7WIXDl4eTxl0rupEQWilABUAZNL9rRYEggtJj9W8mRyfSe0qG8pqPvdtVZmzJ_IGBODD-NhOj1HsmQSSVPOHZN0jUZROycksLCnJGnFSCjtmWLUJ8A"/>
+<img alt="Tư vấn chất liệu" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="colorful rolls of high-quality textile fabrics stacked in a textile warehouse with soft side lighting" src="/Images/google/service-fabric-consulting.png"/>
 </div>
 <div className="p-8 flex-grow flex flex-col">
 <span className="material-symbols-outlined text-secondary mb-4 text-4xl">inventory_2</span>
@@ -203,7 +203,7 @@ export default function ServiceDetailPage() {
 <section className="py-24 px-8 md:px-16 flex flex-col md:flex-row items-center gap-16 overflow-hidden">
 <div className="md:w-1/2">
 <div className="relative">
-<img alt="Chất lượng Lan Chuẩn" className="w-full h-[500px] object-cover rounded-sm" data-alt="close-up of a tailor's hands using a needle and thread on high-quality navy blue wool fabric with shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDfuGxrxISM6vfXwBUeILT6F7biP7sMRwfOncxkvqMulJQUQUdDqfbyQ-gk2XNU-FoT7P-MmEld-h0OA40wCxDHybLm4MC-HKvNTdcuX509flbT31-WGHs13pFEGvvO3kXFNn1CQHgGHxuVt9qnS4Y634XWzaK1FXjLhtSyiwv-2hDiwqGHZYDoIR4JCB30jR7hmJaqe0gaeGEeB_9IW9THrReB4dnaF7k4OzmcAqOh-PLfI4_oBybb0opPdfid3ZuGj3y8-u-W3M"/>
+<img alt="Chất lượng Lan Chuẩn" className="w-full h-[500px] object-cover rounded-sm" data-alt="close-up of a tailor's hands using a needle and thread on high-quality navy blue wool fabric with shallow depth of field" src="/Images/google/service-quality-closeup.png"/>
 <div className="absolute -bottom-6 -right-6 bg-secondary p-8 text-white hidden lg:block">
 <p className="font-headline font-black text-4xl">100%</p>
 <p className="font-label text-xs uppercase tracking-widest">Kiểm soát chất lượng</p>

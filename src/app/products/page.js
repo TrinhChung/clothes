@@ -41,7 +41,7 @@ export default function ProductsPage() {
 {/*  Hero Section  */}
 <section className="relative min-h-[819px] flex items-center overflow-hidden bg-primary">
 <div className="absolute inset-0 opacity-40">
-<img alt="Industrial garment factory background" className="w-full h-full object-cover" data-alt="high-angle wide shot of a modern clean garment factory interior with organized rows of sewing machines and textile rolls under bright industrial lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUIbtQbHyX1fnwzkVwcpWr_7JrFDfhhor9itasH_j-MbytrKL0KmQlOBhVdGSzMUCYpN7nyXr_BQpoCGR-DTcoakSbxb1w0wKPJPE8YiAXQv2oLb1Qn-G3eSOhvsBDz5eFHxSbg7vJi3Q4P3hOinw2A333DhP87uqIiz3PSP2oRG7msMlPdLATCRZpNS9-mji_YqommnHmasDJT4nJLycyq2xo9AAXT6dFOckJIUjhIEY1sOx5dggY_7m-VCpwkwJO1AngY8hCpXo"/>
+<img alt="Industrial garment factory background" className="w-full h-full object-cover" data-alt="high-angle wide shot of a modern clean garment factory interior with organized rows of sewing machines and textile rolls under bright industrial lights" src="/Images/google/products-hero-factory.png"/>
 </div>
 <div className="absolute inset-0 bg-gradient-to-tr from-primary via-primary/80 to-transparent"></div>
 <div className="relative max-w-7xl mx-auto px-8 py-20 grid md:grid-cols-2 gap-12 items-center">
@@ -60,7 +60,7 @@ export default function ProductsPage() {
 </div>
 <div className="hidden md:block relative">
 <div className="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden shadow-2xl transform rotate-2">
-<img alt="Mẫu vải denim cao cấp và áo sơ mi trắng trên bàn cắt may" className="w-full h-full object-cover" data-alt="close-up of premium dark denim fabric and a crisp white shirt stacked neatly on a wooden tailor table with sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyiznUahslnRHtjuuJ-D2NuaUCFTRLxios5rLRfU8O8o56qZ6nZwrEo-NRIAKaylcgsv8GiPHb9iqr2HR2QDIsfc0yhCPiWECnlU4w7bykkLJYSLxC5FaXRBV2jnCeRoy4f5pBmd-4WFxYjUH-NPaxFmfgjkFqkd-n8Xce_Aa_bsQ7lG2o5l6YRrwYAGqF3rvUoAT9Wm2QN2a9YMUBEx-IF_20om8wdDGCUmHbvtbyWRM1jJPPbRpug6IuULqSB97P09ao3Dn2Xz4"/>
+<img alt="Mẫu vải denim cao cấp và áo sơ mi trắng trên bàn cắt may" className="w-full h-full object-cover" data-alt="close-up of premium dark denim fabric and a crisp white shirt stacked neatly on a wooden tailor table with sunlight" src="/Images/google/products-denim-and-shirt.png"/>
 </div>
 <div className="absolute -bottom-8 -left-8 p-8 bg-secondary text-on-secondary rounded-lg shadow-xl max-w-xs transform -rotate-3">
 <p className="font-body italic text-lg leading-snug">"Tối ưu chi phí sản xuất cho các đại lý Ninh Hiệp và Đồng Xuân."</p>
@@ -117,7 +117,7 @@ export default function ProductsPage() {
 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 {/*  School Uniforms  */}
 <div className="md:col-span-2 group relative bg-surface-container-lowest overflow-hidden rounded-xl h-[400px]">
-<img alt="Nhóm học sinh mặc đồng phục được may theo form chuẩn" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="group of students in high quality tailored school uniforms, crisp white shirts and navy blue trousers, clean studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe_7rDVKXiUAM06-3GR5Qt9Z_oeDdRehCxFZikrHL2E0azwEsvvn6QWffFJPqCKEa8yKVto1jZRmkKRcG3o2TYc4LjOqHwWnzpo1KzUjhTTUp6DKJTAWVcPtBI3DNSBudCtpHCsFvoDhoagRX72UKOossV5HFimuHD0Holiah7bYWqHkwQWkCl71qlYUyqoYUJGunBR3yBDj03uEYdKZfh4500TTQWHunvTSEKBlM1b3oEPXycsa0kIgB965SMSZDu2vRXcKJV--g"/>
+<img alt="Nhóm học sinh mặc đồng phục được may theo form chuẩn" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="group of students in high quality tailored school uniforms, crisp white shirts and navy blue trousers, clean studio lighting" src="/Images/google/products-school-uniforms.png"/>
 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
 <div className="absolute bottom-0 left-0 p-8">
 <span className="label-text bg-secondary text-on-secondary px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Uniforms</span>
@@ -127,7 +127,7 @@ export default function ProductsPage() {
 </div>
 {/*  Shirts  */}
 <div className="group relative bg-surface-container-lowest overflow-hidden rounded-xl h-[400px]">
-<img alt="Các mẫu áo sơ mi cotton gấp gọn trên kệ trưng bày" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="neatly folded high-end cotton shirts in various pastel colors on a minimal shelf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaOfIuHp6mwNcIdfa5SqYcUo1sVHtMQWB4rjASo4dn0SZh3HXUY6FI7kqxJBmpXLmiN9zz4zbgfTIYkh9f95ZwvuvEiImYfrMXq1pjXqeVBkVi3nhRvCHoAlYFlEXL86xTYPKxXKfsxK5RX79nT5hTSKR6yHr9OVoUGBa2dfow-PoH_CDGuWr75V-dD0mU1aS7mBe5eLcYcCRzhCYqVc12lo97hZsYkzGZ8frh90TuHETo-PoD-OVejiQETwrTz8QezZVkKm46dN0"/>
+<img alt="Các mẫu áo sơ mi cotton gấp gọn trên kệ trưng bày" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="neatly folded high-end cotton shirts in various pastel colors on a minimal shelf" src="/Images/google/products-folded-shirts.png"/>
 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
 <div className="absolute bottom-0 left-0 p-8">
 <span className="label-text bg-secondary text-on-secondary px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Essentials</span>
@@ -137,7 +137,7 @@ export default function ProductsPage() {
 </div>
 {/*  Jeans/Denim  */}
 <div className="group relative bg-surface-container-lowest overflow-hidden rounded-xl h-[400px]">
-<img alt="Chi tiết đường may quần denim với bề mặt wash hoàn thiện" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="close up of denim jeans showing detailed stitching and high-quality wash texture, industrial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ1BhW41Fa0N9xBQ1GJ_LB0hyOqcGbQjEWdIKrs7uVSleae6JoRpm2wgc_VN5qUa0FknntRDmsOcgabADpE8uwsr9EGJU2owo02CBAzwWejXlaNi6i7ffgl5YiWd7v8dEPL2TwJTw1TRiLc5x8p73-pxuu8mbYJpJL7hEZFb8TrAkzusugFUbdyK8xIFy2mE3STir2gb7xz9NtVhUKr5D_rQKX2Z0X7Bh5WNraIXvADRPDjbfrm5RotixtAxkn4tAWqOj36xcvLOQ"/>
+<img alt="Chi tiết đường may quần denim với bề mặt wash hoàn thiện" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="close up of denim jeans showing detailed stitching and high-quality wash texture, industrial aesthetic" src="/Images/google/products-denim-stitching.png"/>
 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
 <div className="absolute bottom-0 left-0 p-8">
 <span className="label-text bg-secondary text-on-secondary px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Denim Art</span>
@@ -147,7 +147,7 @@ export default function ProductsPage() {
 </div>
 {/*  Khaki/Trousers  */}
 <div className="group relative bg-surface-container-lowest overflow-hidden rounded-xl h-[400px]">
-<img alt="Mẫu quần kaki treo trên giá với bề mặt vải rõ nét" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="professional khaki trousers hanging on a minimalist rack, soft focus on fabric texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS3Rm8cW9gNUmrC0RXCdsqA2KxnT66ndhafmUJL45Of6bNJsV1VCCghEngYHaL_K08W-63NSVZ2MUVk69hZ23QkGx-2JvEYqRy5OuqnOn0DxqeMt9-ov4ZIabWlzEE6Ql01OkXrooHXugpWXwoK4bCRBG6a8eKVo1uVZSaH8oBP4_8QK255TXiNIBAZrH14nKF3WD7fNhSGG76WjULZaAG8od_4nVBdwuLNhv5MHFc1usZgZtLiyZvfBN2SfWUWZ9GffxgWBvGShE"/>
+<img alt="Mẫu quần kaki treo trên giá với bề mặt vải rõ nét" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="professional khaki trousers hanging on a minimalist rack, soft focus on fabric texture" src="/Images/google/products-khaki-trousers.png"/>
 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
 <div className="absolute bottom-0 left-0 p-8">
 <span className="label-text bg-secondary text-on-secondary px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Professional</span>
@@ -157,7 +157,7 @@ export default function ProductsPage() {
 </div>
 {/*  Custom Sewing  */}
 <div className="group relative bg-surface-container-lowest overflow-hidden rounded-xl h-[400px]">
-<img alt="Bàn làm việc của thợ may với bản rập và mẫu vải" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="a tailor's workspace with sketches, fabric swatches and a measuring tape, creative artisanal vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg-o4A2rkEaNqSQm5hgEUBggK3Raowv5IOAr9skpGgOOA0gG_Du49ZYo03JF4RMAg9XjURKEGyeQCC6iFbaZYqQ_macwmi9bT70uTmmZLOO9b1xsL-Hrp0MHiYXx3N8DGRSP6HyVVhj0Kyq5cbd_9jyYWEZrSKXuv1-Gx6BZKOb8jp0UCvpikIoZvHVnMtKEcecuCd0FSrI-EzAq0zHRHpZS3zbouAS30R91XbTlkiR7ufOCjdY_6agPb14vZppmpSEY5nr6xNY0w"/>
+<img alt="Bàn làm việc của thợ may với bản rập và mẫu vải" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="a tailor's workspace with sketches, fabric swatches and a measuring tape, creative artisanal vibe" src="/Images/google/products-tailor-workspace.png"/>
 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
 <div className="absolute bottom-0 left-0 p-8">
 <span className="label-text bg-secondary text-on-secondary px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Tailored</span>
@@ -174,7 +174,7 @@ export default function ProductsPage() {
 <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
 <div className="relative">
 <div className="aspect-square bg-surface-container rounded-2xl overflow-hidden">
-<img alt="Chi tiết logo thêu trên áo đồng phục học sinh" className="w-full h-full object-cover" data-alt="close up of a school uniform logo embroidery on a high-quality polo shirt fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYOTDqUkceEBA6A5msfATWaXSdHZUtbmUjS4oxzD-PSSA69xlGMdZkb46OTkQyUz3hy0TgQZ7t8f5ig9lTE6h1UJ7Y06_n-iO6UK8JBQnNNimJ3vXfylPtmj7ctNLL10Gemwq00pgeJQ7fYg9WVN_yke1vTFen6orwgTYid0_ThVczmS2-M0oW1P1sHUr68ze88_NMSLiIXtcpkNakFJnjPQ0JOJnHWYnom9MenpmSXrJL65lIKuWwBNdYAO5JGy7n3qxiRidDtP8"/>
+<img alt="Chi tiết logo thêu trên áo đồng phục học sinh" className="w-full h-full object-cover" data-alt="close up of a school uniform logo embroidery on a high-quality polo shirt fabric" src="/Images/google/products-uniform-embroidery.png"/>
 </div>
 <div className="absolute -top-4 -right-4 bg-white p-6 shadow-xl rounded-lg max-w-[200px]">
 <span className="material-symbols-outlined text-secondary text-3xl mb-2">verified</span>
@@ -209,7 +209,7 @@ export default function ProductsPage() {
 </div>
 <div className="order-1 md:order-2 relative">
 <div className="aspect-square bg-surface-container rounded-2xl overflow-hidden">
-<img alt="Máy wash denim đang vận hành trong xưởng sản xuất" className="w-full h-full object-cover" data-alt="industrial denim washing machine in operation at a factory, water and movement effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv3FRuF7iDYeurH9QEy5BvkGML8PSha99On-i954jAIUKsJp9-w8PTM5h797I7siLTfBZceZZYA96kz5QB3OUDk-C184WpCNQ97bWyvcorvbbFAMwIb3b_LRWdrwftpoX3No6XHSm4ihQpoYrNcoOnHvqN6VM6mEl7Ih-YAKDamsceKmxSP6kgCmg1d4tCjUmUzW1LBG4g6bpZ22CzUliEKmRJmdlvAWyY47YAppNRDWOe7mqOQ4zQZd7hSm3uymXyrNGjr-or-ag"/>
+<img alt="Máy wash denim đang vận hành trong xưởng sản xuất" className="w-full h-full object-cover" data-alt="industrial denim washing machine in operation at a factory, water and movement effects" src="/Images/google/products-denim-wash-machine.png"/>
 </div>
 </div>
 </div>

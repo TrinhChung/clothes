@@ -6,7 +6,7 @@ export default function Banner() {
       <div className="absolute inset-0 z-0">
         <Image
           className="h-full w-full object-cover"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHMUUY8XLGEBJ2BAKsEsKN1-Vi3h6morrjjkgTh5t9iPeOewktGzr4El06Goz35At_3Sn3pmxWyHE6pIf66HIshJAvcHqIiBMOshGLApJLQBmi_nUy0GAjtSdl9FwH7wtOcFbBnlPwrBo_wjEpb7lVU8xt9pnztvCh-EknOXOqRSgsvRLecnFkgeqgrPqS0RTa5fhB_IkD6paknMhhlUD1S291ZfGSOjaovFwWF03dIX16LrBEljf1vwQUMgIRyoUwdye0WZ6jT5A"
+          src="/Images/google/banner-textile-closeup.png"
           alt="Cận cảnh chất liệu vải cao cấp dùng trong may mặc"
           fill
           priority

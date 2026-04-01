@@ -151,7 +151,7 @@ export default function AboutPage() {
               <img
                 alt="Không gian làm việc tại xưởng may Lan Chuẩn"
                 className="h-full w-full object-cover opacity-80"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7ko2MhpYx4V0AbRrRN7sTB855_kIoUk6myJ2gFvxP7C8arBhypIfxkEutB4oa8Vypk8N4-2Oc-0CFqnvEFNSyD9Jz9NAh0gHEGw65jDH-OPv5N-8R67z2yh9xxjXtDZIctat0H63YSF3TdecIki3GTnyZn8zfj7vtJ325M0SOP5NEBE5ID1zlj-efSLNL5HpJo07RQr8MnzDolP2e-KcdFVVKN202fYp7BI3xaBXFj0mxX3SXI8HBJk1l6Mul01kOxy7ZYd7psZc"
+                src="/Images/google/about-workshop.png"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary via-primary/70 to-primary-container/20" />
               <div className="absolute bottom-0 left-0 max-w-2xl p-8 md:p-12">
