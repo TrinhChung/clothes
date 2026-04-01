@@ -1,9 +1,16 @@
-"use client";
+// Server component with static params
+export async function generateStaticParams() {
+  return [
+    { id: "may-gia-cong" },
+    { id: "dong-phuc" },
+    { id: "may-mau" },
+    { id: "tu-van-vai" },
+  ];
+}
 
 export default function ServiceDetailPage() {
   return (
-    <>
-      
+    <div className="relative">
 {/*  SideNavBar  */}
 <aside className="hidden lg:flex flex-col fixed left-0 top-0 h-screen w-64 bg-slate-50 dark:bg-slate-900 border-r-0 z-40 pt-24 p-4 gap-2">
 <div className="px-2 mb-6">
@@ -232,10 +239,10 @@ export default function ServiceDetailPage() {
 </div>
 </div>
 {/*  Decorative circle  */}
-<div className="absolute -bottom-24 -left-24 w-64 h-64 border-[40px] border-white/5 rounded-full"></div>
+<div className="absolute -bottom-24 -left-24 w-64 h-64 border-white/5 rounded-full" style={{ border: '40px solid rgba(255,255,255,0.05)' }}></div>
 </section>
-{/*  Footer  */}
+</main>
 
-    </>
+    </div>
   );
 }

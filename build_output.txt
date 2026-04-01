@@ -1,0 +1,53 @@
+﻿  Γû▓ Next.js 14.2.21
+
+   Creating an optimized production build ...
+npx : Browserslist: caniuse-lite is 
+outdated. Please run:
+At line:1 char:1
++ npx next build 2>&1 | Out-File 
+build_output.txt -Encoding utf8; 
+Get-C ...
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSp 
+   ecified: (Browserslist: c...ed.  
+   Please run::String) [], Remote   
+ Exception
+    + FullyQualifiedErrorId : Nativ 
+   eCommandError
+ 
+  npx update-browserslist-db@latest
+  Why you should do it regularly: ht
+tps://github.com/browserslist/update
+-db#readme
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/13) ...
+   Generating static pages (3/13) 
+   Generating static pages (6/13) 
+   Generating static pages (9/13) 
+ Γ£ô Generating static pages (13/13)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+Γöî Γùï /                                    4.16 kB        96.7 kB
+Γö£ Γùï /_not-found                          873 B          88.2 kB
+Γö£ Γùï /about                               3.65 kB        90.9 kB
+Γö£ Γùï /blog                                342 kB          429 kB
+Γö£ Γùï /products                            7.51 kB        94.8 kB
+Γö£ Γùï /services                            4.12 kB        91.4 kB
+Γöö ΓùÅ /services/[id]                       138 B          87.4 kB
+    Γö£ /services/may-gia-cong
+    Γö£ /services/dong-phuc
+    Γö£ /services/may-mau
+    Γöö /services/tu-van-vai
++ First Load JS shared by all            87.3 kB
+  Γö£ chunks/117-0585abacf019e6dc.js       31.7 kB
+  Γö£ chunks/fd9d1056-a05d28358c6f8c47.js  53.6 kB
+  Γöö other shared chunks (total)          1.96 kB
+
+
+Γùï  (Static)  prerendered as static content
+ΓùÅ  (SSG)     prerendered as static HTML (uses getStaticProps)
+

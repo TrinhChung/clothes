@@ -7,7 +7,7 @@ export default function ServicesPage() {
 <main className="pt-24">
 {/*  Hero Header  */}
 <header className="max-w-7xl mx-auto px-8 py-16 lg:py-24">
-<div className="editorial-grid gap-8">
+<div className="grid grid-cols-12 gap-8">
 <div className="col-span-12 lg:col-span-7">
 <span className="font-label text-secondary tracking-widest text-xs uppercase mb-4 block">Dịch vụ &amp; Sản phẩm</span>
 <h1 className="font-headline text-5xl lg:text-7xl font-extrabold tracking-tight text-primary leading-none mb-8">
