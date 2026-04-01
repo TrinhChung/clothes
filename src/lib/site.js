@@ -1,7 +1,8 @@
 export const siteConfig = {
-  siteName: "Fabricon",
+  siteName: "Xưởng may Lan Chuẩn",
+  alternateName: "Fabricon",
   businessName: "Xưởng may Lan Chuẩn",
-  title: "Xưởng may Lan Chuẩn | Fabricon",
+  title: "Xưởng may Lan Chuẩn",
   description:
     "Xưởng may Lan Chuẩn nhận gia công may mặc, đồng phục và may mẫu theo yêu cầu. Tư vấn chất liệu, kiểm soát QC và giao hàng đúng tiến độ cho khách hàng B2B tại Việt Nam.",
   url: "https://fabricon.noirsteed.com",
