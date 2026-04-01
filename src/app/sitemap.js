@@ -5,6 +5,7 @@ const publicRoutes = [
   { path: "/about", priority: 0.8, changeFrequency: "monthly" },
   { path: "/services", priority: 0.9, changeFrequency: "weekly" },
   { path: "/products", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/blog", priority: 0.8, changeFrequency: "monthly" },
   { path: "/contact", priority: 0.8, changeFrequency: "monthly" },
 ];
 

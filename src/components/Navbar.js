@@ -14,6 +14,7 @@ export default function Navbar() {
     { href: "/about", label: "Giới thiệu" },
     { href: "/services", label: "Dịch vụ" },
     { href: "/products", label: "Sản phẩm" },
+    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Liên hệ" },
   ];
 
@@ -27,9 +28,9 @@ export default function Navbar() {
   };
 
   const activeCls =
-    "text-primary dark:text-blue-400 font-bold border-b-2 border-primary dark:border-blue-400 pb-1 text-base font-medium font-body transition-colors";
+    "border-b-2 border-primary pb-1 font-body text-base font-bold text-primary transition-colors dark:border-blue-400 dark:text-blue-400";
   const inactiveCls =
-    "text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-300 transition-colors text-base font-medium font-body border-b-2 border-transparent pb-1";
+    "border-b-2 border-transparent pb-1 font-body text-base font-medium text-slate-600 transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-blue-300";
 
   return (
     <nav className="fixed top-0 z-50 w-full bg-white/80 shadow-sm backdrop-blur-xl dark:bg-slate-950/80 dark:shadow-none">
@@ -78,7 +79,7 @@ export default function Navbar() {
       <div
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } absolute top-full left-0 w-full border-t border-slate-100 bg-white p-4 shadow-lg dark:border-slate-800 dark:bg-slate-900 md:hidden`}
+        } absolute left-0 top-full w-full border-t border-slate-100 bg-white p-4 shadow-lg dark:border-slate-800 dark:bg-slate-900 md:hidden`}
       >
         <div className="flex flex-col space-y-1 font-body">
           {navLinks.map(({ href, label }) => (

@@ -66,6 +66,14 @@ export default function Footer() {
                 Sản phẩm
               </a>
             </li>
+            <li>
+              <a
+                className="font-body text-base text-slate-400 transition-colors hover:text-white"
+                href="/blog"
+              >
+                Blog
+              </a>
+            </li>
           </ul>
         </div>
 
