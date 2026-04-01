@@ -19,11 +19,11 @@ const article = {
   readingTime: "10 phút đọc",
   category: "Cẩm nang sản xuất",
   heroImage:
-    "/Images/google/blog-hero-textile-workshop.png",
+    "/Images/google/blog-hero-textile-workshop.webp",
   workshopImage:
-    "/Images/google/blog-artisan-work.png",
+    "/Images/google/blog-artisan-work.webp",
   productImage:
-    "/Images/google/blog-finished-products.png",
+    "/Images/google/blog-finished-products.webp",
 };
 
 const riskSignals = [

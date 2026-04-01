@@ -151,7 +151,7 @@ export default function AboutPage() {
               <img
                 alt="Không gian làm việc tại xưởng may Lan Chuẩn"
                 className="h-full w-full object-cover opacity-80"
-                src="/Images/google/about-workshop.png"
+                src="/Images/google/about-workshop.webp"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary via-primary/70 to-primary-container/20" />
               <div className="absolute bottom-0 left-0 max-w-2xl p-8 md:p-12">

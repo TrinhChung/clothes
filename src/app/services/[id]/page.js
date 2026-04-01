@@ -53,7 +53,7 @@ export default function ServiceDetailPage() {
 {/*  Hero Section  */}
 <section className="relative h-[819px] flex items-center overflow-hidden bg-primary">
 <div className="absolute inset-0 z-0">
-<img alt="Xưởng may Lan Chuẩn" className="w-full h-full object-cover opacity-40" data-alt="industrial garment factory interior with rows of sewing machines and focused workers in soft natural workshop lighting" src="/Images/google/service-hero-factory.png"/>
+<img alt="Xưởng may Lan Chuẩn" className="w-full h-full object-cover opacity-40" data-alt="industrial garment factory interior with rows of sewing machines and focused workers in soft natural workshop lighting" src="/Images/google/service-hero-factory.webp"/>
 <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
 </div>
 <div className="relative z-10 px-8 md:px-16 max-w-4xl">
@@ -83,7 +83,7 @@ export default function ServiceDetailPage() {
 {/*  Service Card 1  */}
 <div className="bg-surface-container-lowest group hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
 <div className="h-48 overflow-hidden">
-<img alt="May gia công thời trang" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="close-up of a high-end designer blazer with intricate stitching details on a professional garment rack" src="/Images/google/service-fashion-manufacturing.png"/>
+<img alt="May gia công thời trang" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="close-up of a high-end designer blazer with intricate stitching details on a professional garment rack" src="/Images/google/service-fashion-manufacturing.webp"/>
 </div>
 <div className="p-8 flex-grow flex flex-col">
 <span className="material-symbols-outlined text-secondary mb-4 text-4xl">checkroom</span>
@@ -98,7 +98,7 @@ export default function ServiceDetailPage() {
 {/*  Service Card 2  */}
 <div className="bg-surface-container-lowest group hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
 <div className="h-48 overflow-hidden">
-<img alt="Sản xuất đồng phục" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="group of professional employees wearing high-quality matching corporate uniforms in a modern office lobby" src="/Images/google/service-uniform-production.png"/>
+<img alt="Sản xuất đồng phục" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="group of professional employees wearing high-quality matching corporate uniforms in a modern office lobby" src="/Images/google/service-uniform-production.webp"/>
 </div>
 <div className="p-8 flex-grow flex flex-col">
 <span className="material-symbols-outlined text-secondary mb-4 text-4xl">business_center</span>
@@ -113,7 +113,7 @@ export default function ServiceDetailPage() {
 {/*  Service Card 3  */}
 <div className="bg-surface-container-lowest group hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
 <div className="h-48 overflow-hidden">
-<img alt="May mẫu &amp; Nhảy size" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="hands of a pattern maker using a ruler and chalk on fabric layout on a large drafting table" src="/Images/google/service-pattern-making.png"/>
+<img alt="May mẫu &amp; Nhảy size" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="hands of a pattern maker using a ruler and chalk on fabric layout on a large drafting table" src="/Images/google/service-pattern-making.webp"/>
 </div>
 <div className="p-8 flex-grow flex flex-col">
 <span className="material-symbols-outlined text-secondary mb-4 text-4xl">straighten</span>
@@ -128,7 +128,7 @@ export default function ServiceDetailPage() {
 {/*  Service Card 4  */}
 <div className="bg-surface-container-lowest group hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
 <div className="h-48 overflow-hidden">
-<img alt="Tư vấn chất liệu" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="colorful rolls of high-quality textile fabrics stacked in a textile warehouse with soft side lighting" src="/Images/google/service-fabric-consulting.png"/>
+<img alt="Tư vấn chất liệu" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="colorful rolls of high-quality textile fabrics stacked in a textile warehouse with soft side lighting" src="/Images/google/service-fabric-consulting.webp"/>
 </div>
 <div className="p-8 flex-grow flex flex-col">
 <span className="material-symbols-outlined text-secondary mb-4 text-4xl">inventory_2</span>
@@ -203,7 +203,7 @@ export default function ServiceDetailPage() {
 <section className="py-24 px-8 md:px-16 flex flex-col md:flex-row items-center gap-16 overflow-hidden">
 <div className="md:w-1/2">
 <div className="relative">
-<img alt="Chất lượng Lan Chuẩn" className="w-full h-[500px] object-cover rounded-sm" data-alt="close-up of a tailor's hands using a needle and thread on high-quality navy blue wool fabric with shallow depth of field" src="/Images/google/service-quality-closeup.png"/>
+<img alt="Chất lượng Lan Chuẩn" className="w-full h-[500px] object-cover rounded-sm" data-alt="close-up of a tailor's hands using a needle and thread on high-quality navy blue wool fabric with shallow depth of field" src="/Images/google/service-quality-closeup.webp"/>
 <div className="absolute -bottom-6 -right-6 bg-secondary p-8 text-white hidden lg:block">
 <p className="font-headline font-black text-4xl">100%</p>
 <p className="font-label text-xs uppercase tracking-widest">Kiểm soát chất lượng</p>

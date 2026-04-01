@@ -115,7 +115,7 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="relative group overflow-hidden rounded-xl h-[400px]">
-                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Cận cảnh máy may công nghiệp đang hoàn thiện sản phẩm thời trang" data-alt="Close up of professional sewing machine stitching a piece of beige suit fabric with precision" src="/Images/google/home-sewing-machine.png"/>
+                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Cận cảnh máy may công nghiệp đang hoàn thiện sản phẩm thời trang" data-alt="Close up of professional sewing machine stitching a piece of beige suit fabric with precision" src="/Images/google/home-sewing-machine.webp"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent p-8 flex flex-col justify-end">
                   <h3 className="text-2xl font-bold text-white font-headline mb-2">Sản xuất gia công</h3>
                   <p className="text-surface-variant font-body mb-4">Gia công theo đơn đặt hàng với số lượng linh hoạt, từ thiết kế đến thành phẩm.</p>
@@ -123,7 +123,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="relative group overflow-hidden rounded-xl h-[400px]">
-                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Bộ sưu tập đồng phục công sở treo trên giá trong xưởng may" data-alt="A row of neatly hung corporate uniforms and office attire in various shades of navy and grey" src="/Images/google/home-office-uniforms.png"/>
+                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Bộ sưu tập đồng phục công sở treo trên giá trong xưởng may" data-alt="A row of neatly hung corporate uniforms and office attire in various shades of navy and grey" src="/Images/google/home-office-uniforms.webp"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent p-8 flex flex-col justify-end">
                   <h3 className="text-2xl font-bold text-white font-headline mb-2">May mặc đồng phục</h3>
                   <p className="text-surface-variant font-body mb-4">Cung cấp giải pháp đồng phục chuyên nghiệp cho doanh nghiệp, trường học và tổ chức.</p>

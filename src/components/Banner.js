@@ -6,7 +6,7 @@ export default function Banner() {
       <div className="absolute inset-0 z-0">
         <Image
           className="h-full w-full object-cover"
-          src="/Images/google/banner-textile-closeup.png"
+          src="/Images/google/banner-textile-closeup.webp"
           alt="Cận cảnh chất liệu vải cao cấp dùng trong may mặc"
           fill
           priority

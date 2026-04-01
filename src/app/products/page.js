@@ -41,7 +41,7 @@ export default function ProductsPage() {
 {/*  Hero Section  */}
 <section className="relative min-h-[819px] flex items-center overflow-hidden bg-primary">
 <div className="absolute inset-0 opacity-40">
-<img alt="Industrial garment factory background" className="w-full h-full object-cover" data-alt="high-angle wide shot of a modern clean garment factory interior with organized rows of sewing machines and textile rolls under bright industrial lights" src="/Images/google/products-hero-factory.png"/>
+<img alt="Industrial garment factory background" className="w-full h-full object-cover" data-alt="high-angle wide shot of a modern clean garment factory interior with organized rows of sewing machines and textile rolls under bright industrial lights" src="/Images/google/products-hero-factory.webp"/>
 </div>
 <div className="absolute inset-0 bg-gradient-to-tr from-primary via-primary/80 to-transparent"></div>
 <div className="relative max-w-7xl mx-auto px-8 py-20 grid md:grid-cols-2 gap-12 items-center">
@@ -60,7 +60,7 @@ export default function ProductsPage() {
 </div>
 <div className="hidden md:block relative">
 <div className="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden shadow-2xl transform rotate-2">
-<img alt="Mẫu vải denim cao cấp và áo sơ mi trắng trên bàn cắt may" className="w-full h-full object-cover" data-alt="close-up of premium dark denim fabric and a crisp white shirt stacked neatly on a wooden tailor table with sunlight" src="/Images/google/products-denim-and-shirt.png"/>
+<img alt="Mẫu vải denim cao cấp và áo sơ mi trắng trên bàn cắt may" className="w-full h-full object-cover" data-alt="close-up of premium dark denim fabric and a crisp white shirt stacked neatly on a wooden tailor table with sunlight" src="/Images/google/products-denim-and-shirt.webp"/>
 </div>
 <div className="absolute -bottom-8 -left-8 p-8 bg-secondary text-on-secondary rounded-lg shadow-xl max-w-xs transform -rotate-3">
 <p className="font-body italic text-lg leading-snug">"Tối ưu chi phí sản xuất cho các đại lý Ninh Hiệp và Đồng Xuân."</p>
@@ -117,7 +117,7 @@ export default function ProductsPage() {
 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 {/*  School Uniforms  */}
 <div className="md:col-span-2 group relative bg-surface-container-lowest overflow-hidden rounded-xl h-[400px]">
-<img alt="Nhóm học sinh mặc đồng phục được may theo form chuẩn" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="group of students in high quality tailored school uniforms, crisp white shirts and navy blue trousers, clean studio lighting" src="/Images/google/products-school-uniforms.png"/>
+<img alt="Nhóm học sinh mặc đồng phục được may theo form chuẩn" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="group of students in high quality tailored school uniforms, crisp white shirts and navy blue trousers, clean studio lighting" src="/Images/google/products-school-uniforms.webp"/>
 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
 <div className="absolute bottom-0 left-0 p-8">
 <span className="label-text bg-secondary text-on-secondary px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Uniforms</span>
@@ -127,7 +127,7 @@ export default function ProductsPage() {
 </div>
 {/*  Shirts  */}
 <div className="group relative bg-surface-container-lowest overflow-hidden rounded-xl h-[400px]">
-<img alt="Các mẫu áo sơ mi cotton gấp gọn trên kệ trưng bày" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="neatly folded high-end cotton shirts in various pastel colors on a minimal shelf" src="/Images/google/products-folded-shirts.png"/>
+<img alt="Các mẫu áo sơ mi cotton gấp gọn trên kệ trưng bày" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="neatly folded high-end cotton shirts in various pastel colors on a minimal shelf" src="/Images/google/products-folded-shirts.webp"/>
 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
 <div className="absolute bottom-0 left-0 p-8">
 <span className="label-text bg-secondary text-on-secondary px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Essentials</span>
@@ -137,7 +137,7 @@ export default function ProductsPage() {
 </div>
 {/*  Jeans/Denim  */}
 <div className="group relative bg-surface-container-lowest overflow-hidden rounded-xl h-[400px]">
-<img alt="Chi tiết đường may quần denim với bề mặt wash hoàn thiện" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="close up of denim jeans showing detailed stitching and high-quality wash texture, industrial aesthetic" src="/Images/google/products-denim-stitching.png"/>
+<img alt="Chi tiết đường may quần denim với bề mặt wash hoàn thiện" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="close up of denim jeans showing detailed stitching and high-quality wash texture, industrial aesthetic" src="/Images/google/products-denim-stitching.webp"/>
 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
 <div className="absolute bottom-0 left-0 p-8">
 <span className="label-text bg-secondary text-on-secondary px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Denim Art</span>
@@ -147,7 +147,7 @@ export default function ProductsPage() {
 </div>
 {/*  Khaki/Trousers  */}
 <div className="group relative bg-surface-container-lowest overflow-hidden rounded-xl h-[400px]">
-<img alt="Mẫu quần kaki treo trên giá với bề mặt vải rõ nét" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="professional khaki trousers hanging on a minimalist rack, soft focus on fabric texture" src="/Images/google/products-khaki-trousers.png"/>
+<img alt="Mẫu quần kaki treo trên giá với bề mặt vải rõ nét" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="professional khaki trousers hanging on a minimalist rack, soft focus on fabric texture" src="/Images/google/products-khaki-trousers.webp"/>
 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
 <div className="absolute bottom-0 left-0 p-8">
 <span className="label-text bg-secondary text-on-secondary px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Professional</span>
@@ -157,7 +157,7 @@ export default function ProductsPage() {
 </div>
 {/*  Custom Sewing  */}
 <div className="group relative bg-surface-container-lowest overflow-hidden rounded-xl h-[400px]">
-<img alt="Bàn làm việc của thợ may với bản rập và mẫu vải" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="a tailor's workspace with sketches, fabric swatches and a measuring tape, creative artisanal vibe" src="/Images/google/products-tailor-workspace.png"/>
+<img alt="Bàn làm việc của thợ may với bản rập và mẫu vải" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="a tailor's workspace with sketches, fabric swatches and a measuring tape, creative artisanal vibe" src="/Images/google/products-tailor-workspace.webp"/>
 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
 <div className="absolute bottom-0 left-0 p-8">
 <span className="label-text bg-secondary text-on-secondary px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Tailored</span>
@@ -174,7 +174,7 @@ export default function ProductsPage() {
 <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
 <div className="relative">
 <div className="aspect-square bg-surface-container rounded-2xl overflow-hidden">
-<img alt="Chi tiết logo thêu trên áo đồng phục học sinh" className="w-full h-full object-cover" data-alt="close up of a school uniform logo embroidery on a high-quality polo shirt fabric" src="/Images/google/products-uniform-embroidery.png"/>
+<img alt="Chi tiết logo thêu trên áo đồng phục học sinh" className="w-full h-full object-cover" data-alt="close up of a school uniform logo embroidery on a high-quality polo shirt fabric" src="/Images/google/products-uniform-embroidery.webp"/>
 </div>
 <div className="absolute -top-4 -right-4 bg-white p-6 shadow-xl rounded-lg max-w-[200px]">
 <span className="material-symbols-outlined text-secondary text-3xl mb-2">verified</span>
@@ -209,7 +209,7 @@ export default function ProductsPage() {
 </div>
 <div className="order-1 md:order-2 relative">
 <div className="aspect-square bg-surface-container rounded-2xl overflow-hidden">
-<img alt="Máy wash denim đang vận hành trong xưởng sản xuất" className="w-full h-full object-cover" data-alt="industrial denim washing machine in operation at a factory, water and movement effects" src="/Images/google/products-denim-wash-machine.png"/>
+<img alt="Máy wash denim đang vận hành trong xưởng sản xuất" className="w-full h-full object-cover" data-alt="industrial denim washing machine in operation at a factory, water and movement effects" src="/Images/google/products-denim-wash-machine.webp"/>
 </div>
 </div>
 </div>
