@@ -2,18 +2,39 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const navLinks = [
+    { href: "/", label: "Trang chủ" },
+    { href: "/about", label: "Giới thiệu" },
+    { href: "/services", label: "Dịch vụ" },
+    { href: "/products", label: "Sản phẩm" },
+    { href: "/about#contact", label: "Liên hệ" },
+  ];
+
+  const isActive = (href) => {
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href.split("#")[0]);
+  };
+
+  const activeCls =
+    "text-primary dark:text-blue-400 font-bold border-b-2 border-primary dark:border-blue-400 pb-1 text-base font-medium font-body transition-colors";
+  const inactiveCls =
+    "text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-300 transition-colors text-base font-medium font-body border-b-2 border-transparent pb-1";
+
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
       <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-        <a href="/" className="flex items-center gap-4 text-3xl font-bold tracking-tight text-primary dark:text-white font-headline">
+        <Link href="/" className="flex items-center gap-4 text-3xl font-bold tracking-tight text-primary dark:text-white font-headline">
           <Image
             src="/Images/logo.png"
             width={40}
@@ -23,43 +44,28 @@ export default function Navbar() {
             priority
           />
           Fabricon
-        </a>
+        </Link>
+
+        {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a
-            className="text-primary dark:text-blue-400 font-bold border-b-2 border-primary dark:border-blue-400 pb-1 text-base font-medium font-body"
-            href="#"
-          >
-            Trang chủ
-          </a>
-          <a
-            className="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-300 transition-colors text-base font-medium font-body"
-            href="/about"
-          >
-            Giới thiệu
-          </a>
-          <a
-            className="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-300 transition-colors text-base font-medium font-body"
-            href="/services"
-          >
-            Dịch vụ
-          </a>
-          <a
-            className="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-300 transition-colors text-base font-medium font-body"
-            href="/products"
-          >
-            Sản phẩm
-          </a>
-          <a
-            className="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-300 transition-colors text-base font-medium font-body"
-            href="#contact"
-          >
-            Liên hệ
-          </a>
+          {navLinks.map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className={isActive(href) ? activeCls : inactiveCls}
+            >
+              {label}
+            </Link>
+          ))}
         </div>
+
         <div className="hidden md:block">
-          <button className="bg-primary text-on-primary px-6 py-2.5 rounded-md font-headline font-semibold text-base hover:scale-95 duration-200 ease-in-out transition-all">
+          <Link
+            href="/about#contact"
+            className="bg-primary text-on-primary px-6 py-2.5 rounded-md font-headline font-semibold text-base hover:scale-95 duration-200 ease-in-out transition-all"
+          >
             Yêu cầu báo giá
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Navbar toggle */}
@@ -77,45 +83,28 @@ export default function Navbar() {
           isMenuOpen ? "block" : "hidden"
         } md:hidden absolute top-full left-0 w-full bg-white dark:bg-slate-900 p-4 shadow-lg border-t border-slate-100 dark:border-slate-800`}
       >
-        <div className="flex flex-col space-y-4 font-body">
-          <a
-            href="/"
-            className="text-primary font-bold border-b-2 border-primary pb-1 inline-block w-fit"
+        <div className="flex flex-col space-y-1 font-body">
+          {navLinks.map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              onClick={toggleMenu}
+              className={
+                isActive(href)
+                  ? "text-primary font-bold border-l-4 border-primary pl-3 py-2 bg-surface-container-low block"
+                  : "text-slate-600 dark:text-slate-300 pl-3 py-2 hover:text-primary hover:bg-surface-container-low block border-l-4 border-transparent transition-colors"
+              }
+            >
+              {label}
+            </Link>
+          ))}
+          <Link
+            href="/about#contact"
             onClick={toggleMenu}
+            className="bg-primary text-on-primary px-6 py-3 mt-4 rounded-md font-headline font-semibold text-base w-full text-center block"
           >
-            Trang chủ
-          </a>
-          <a
-            href="/about"
-            className="text-slate-600 dark:text-slate-300 py-2 hover:text-primary"
-            onClick={toggleMenu}
-          >
-            Giới thiệu
-          </a>
-          <a
-            href="/services"
-            className="text-slate-600 dark:text-slate-300 py-2 hover:text-primary"
-            onClick={toggleMenu}
-          >
-            Dịch vụ
-          </a>
-          <a
-            href="/products"
-            className="text-slate-600 dark:text-slate-300 py-2 hover:text-primary"
-            onClick={toggleMenu}
-          >
-            Sản phẩm
-          </a>
-          <a
-            href="#contact"
-            className="text-slate-600 dark:text-slate-300 py-2 hover:text-primary"
-            onClick={toggleMenu}
-          >
-            Liên hệ
-          </a>
-          <button className="bg-primary text-on-primary px-6 py-3 mt-4 rounded-md font-headline font-semibold text-sm w-full">
             Yêu cầu báo giá
-          </button>
+          </Link>
         </div>
       </div>
     </nav>
