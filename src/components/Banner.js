@@ -1,40 +1,44 @@
+"use client";
+
+import Image from "next/image";
+
 export default function Banner() {
   return (
-    <div className="relative w-full">
-      {/* Banner image (centered with original size) */}
-      <div className="w-full flex flex-col justify-center items-center">
-        <img
-          src="/Images/banner.png"
-          alt="Fabricon Banner"
-          className="object-contain h-auto lg:h-[60vh] z-20"
+    <section className="relative h-[870px] flex items-center overflow-hidden w-full">
+      <div className="absolute inset-0 z-0">
+        <Image
+          className="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHMUUY8XLGEBJ2BAKsEsKN1-Vi3h6morrjjkgTh5t9iPeOewktGzr4El06Goz35At_3Sn3pmxWyHE6pIf66HIshJAvcHqIiBMOshGLApJLQBmi_nUy0GAjtSdl9FwH7wtOcFbBnlPwrBo_wjEpb7lVU8xt9pnztvCh-EknOXOqRSgsvRLecnFkgeqgrPqS0RTa5fhB_IkD6paknMhhlUD1S291ZfGSOjaovFwWF03dIX16LrBEljf1vwQUMgIRyoUwdye0WZ6jT5A"
+          alt="Close-up of high-quality navy blue silk fabric texture"
+          fill
+          priority
+          unoptimized
         />
-        <header
-          id="home"
-          className="row-start-2 flex flex-col items-center text-center gap-4 z-20 px-4 sm:px-8"
-        >
-          <h1 className="text-2xl sm:text-5xl lg:text-6xl font-bold text-[var(--main-yellow)]">
-            Xưởng may LAN CHUẨN
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/60 to-transparent"></div>
+      </div>
+      <div className="relative z-10 max-w-7xl mx-auto px-8 w-full mt-20">
+        <div className="max-w-2xl">
+          <span className="inline-block px-3 py-1 mb-6 bg-secondary-container text-on-secondary-container font-label text-xs font-bold uppercase tracking-[0.2em] rounded">
+            Established Quality
+          </span>
+          <h1 className="text-5xl md:text-7xl font-black text-white font-headline leading-tight tracking-tighter mb-6">
+            Xưởng May Gia Công <br />
+            <span className="text-secondary-fixed">Chuyên Nghiệp</span>
           </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-[var(--main-green)]">
-            Chất lượng vượt trội - Dịch vụ chuyên nghiệp - Giá thành hợp lý
+          <p className="text-xl text-surface-variant font-body mb-10 leading-relaxed">
+            Tận tâm trong từng đường kim mũi chỉ. Chúng tôi cam kết mang lại giá trị bền vững và chất lượng vượt trội cho mọi dự án may mặc của bạn.
           </p>
-          <button
-            className="mt-4 px-6 py-2 bg-[var(--main-yellow)] font-bold text-[var(--main-jean)] rounded-lg hover:bg-[var(--main-yellow)]"
-            onClick={() => (window.location.href = "tel:+84965628195")}
-          >
-            Liên hệ ngay
-          </button>
-        </header>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button className="bg-white text-primary px-8 py-4 rounded-md font-headline font-bold text-base hover:bg-secondary-container transition-all flex items-center justify-center gap-2">
+              Yêu cầu báo giá
+              <span className="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+            <button className="border border-white/30 backdrop-blur-md text-white px-8 py-4 rounded-md font-headline font-bold text-base hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+              Khám phá dịch vụ
+            </button>
+          </div>
+        </div>
       </div>
-
-      {/* Background image with infinite scrolling effect */}
-      <div
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center animate-infinite-slide z-10"
-        style={{ backgroundImage: "url('/Images/background_banner.png')" }}
-      >
-        {/* Content within the background */}
-        <div className="flex justify-center items-center w-full h-full text-[#ffffff] relative z-10"></div>
-      </div>
-    </div>
+    </section>
   );
 }

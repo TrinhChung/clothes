@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { geistMono, geistSans } from "@/utils/constantFont";
 export const metadata = {
   title: "Fabricon - Xưởng May Chuyên Nghiệp",
   description:
@@ -42,21 +41,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        style={{
-          fontFamily: "var(--font-geist-sans), sans-serif", // Font fallback
-        }}
-      >
-        {/* Navbar Section */}
+      <body className="antialiased bg-background text-on-surface">
         <Navbar />
-        <div
-          className="grid grid-rows-[auto_auto_1fr_auto] items-center justify-items-center min-h-screen
-             sm:p-20 gap-16 font-[family-name:var(--font-geist-sans)] bg-[var(--background)] text-[var(--foreground)]"
-        >
-          {children}
-        </div>
-        {/* Footer Section */}
+        {children}
         <Footer />
       </body>
     </html>
