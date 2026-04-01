@@ -4,12 +4,12 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-4">
         <div>
           <div className="mb-4 flex items-center gap-3 font-headline text-2xl font-bold text-white">
-            <img src="/Images/logo.png" alt="Fabricon Logo" className="h-8" />
+            <img src="/Images/logo.webp" alt="Fabricon Logo" className="h-8" />
             Fabricon
           </div>
           <p className="mb-6 font-body text-base leading-relaxed text-slate-400">
-            Xưởng may gia công chuyên nghiệp, cam kết uy tín và chất lượng trên
-            từng sản phẩm.
+            Xưởng may gia công chuyên nghiệp, cam kết uy tín và chất lượng trên từng
+            sản phẩm.
           </p>
           <div className="flex gap-4">
             <a
@@ -69,6 +69,14 @@ export default function Footer() {
             <li>
               <a
                 className="font-body text-base text-slate-400 transition-colors hover:text-white"
+                href="/careers"
+              >
+                Tuyển dụng
+              </a>
+            </li>
+            <li>
+              <a
+                className="font-body text-base text-slate-400 transition-colors hover:text-white"
                 href="/blog"
               >
                 Blog
@@ -96,6 +104,14 @@ export default function Footer() {
                 href="/contact"
               >
                 Liên hệ
+              </a>
+            </li>
+            <li>
+              <a
+                className="font-body text-base text-slate-400 transition-colors hover:text-white"
+                href="/careers"
+              >
+                Gửi hồ sơ ứng tuyển
               </a>
             </li>
             <li>

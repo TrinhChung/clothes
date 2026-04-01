@@ -157,7 +157,7 @@ export default function ServicesPage() {
               {/*  Portfolio Item 3  */}
               <div className="group cursor-pointer">
                 <div className="relative aspect-[3/4] overflow-hidden bg-surface-container-high rounded-xl mb-6">
-                  <img alt="Trang phục bảo hộ lao động do Lan Chuẩn gia công" className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" src="/Images/baoholaodong.jpg" />
+                  <img alt="Trang phục bảo hộ lao động do Lan Chuẩn gia công" className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" src="/Images/baoholaodong.webp" />
                   <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                     <span className="bg-white/90 backdrop-blur text-primary px-4 py-2 rounded-full font-label text-xs font-bold tracking-widest uppercase">Xem Chi Tiết</span>
                   </div>

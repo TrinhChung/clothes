@@ -14,6 +14,7 @@ export default function Navbar() {
     { href: "/about", label: "Giới thiệu" },
     { href: "/services", label: "Dịch vụ" },
     { href: "/products", label: "Sản phẩm" },
+    { href: "/careers", label: "Tuyển dụng" },
     { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Liên hệ" },
   ];
@@ -40,7 +41,7 @@ export default function Navbar() {
           className="flex items-center gap-4 font-headline text-3xl font-bold tracking-tight text-primary dark:text-white"
         >
           <Image
-            src="/Images/logo.png"
+            src="/Images/logo.webp"
             width={40}
             height={40}
             alt="Logo Fabricon"

@@ -1,109 +1,115 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { setTimeout as delay } from "node:timers/promises";
 import sharp from "sharp";
 
 const root = process.cwd();
+const imagesDir = path.join(root, "public/Images");
 
-const webpJobs = [
-  {
-    input: "public/Images/dongphucongso.png",
-    output: "public/Images/dongphucongso.webp",
-    width: 1400,
-    quality: 78,
-    deleteInput: true,
-  },
-  {
-    input: "public/Images/thoitrangxuatkhau.png",
-    output: "public/Images/thoitrangxuatkhau.webp",
-    width: 1400,
-    quality: 78,
-    deleteInput: true,
-  },
-];
+const qualityByName = new Map([
+  ["logo.png", 90],
+  ["meta.jpg", 84],
+]);
 
-const jpgJobs = [
-  {
-    input: "public/Images/meta.jpg",
-    width: 1200,
-    quality: 82,
-  },
-];
+async function collectConvertibleFiles(dir) {
+  const entries = await fs.readdir(dir, { withFileTypes: true });
+  const files = [];
+
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+
+    if (entry.isDirectory()) {
+      files.push(...(await collectConvertibleFiles(fullPath)));
+      continue;
+    }
+
+    const ext = path.extname(entry.name).toLowerCase();
+    if (ext === ".png" || ext === ".jpg" || ext === ".jpeg") {
+      files.push(fullPath);
+    }
+  }
+
+  return files;
+}
 
 async function getSize(file) {
   const stat = await fs.stat(file);
   return stat.size;
 }
 
-async function ensureDir(file) {
-  await fs.mkdir(path.dirname(file), { recursive: true });
+function toRelative(file) {
+  return path.relative(root, file).replaceAll("\\", "/");
 }
 
-async function optimizeWebp({ input, output, width, quality, deleteInput }) {
-  const absInput = path.join(root, input);
-  const absOutput = path.join(root, output);
-  await ensureDir(absOutput);
+function getWebpPath(file) {
+  const dir = path.dirname(file);
+  const base = path.basename(file, path.extname(file));
+  return path.join(dir, `${base}.webp`);
+}
 
-  const before = await getSize(absInput);
-  await sharp(absInput)
+async function convertToWebp(file) {
+  const output = getWebpPath(file);
+  const before = await getSize(file);
+  const quality = qualityByName.get(path.basename(file).toLowerCase()) ?? 82;
+
+  await fs.rm(output, { force: true });
+  await sharp(file)
     .rotate()
-    .resize({ width, withoutEnlargement: true })
     .webp({ quality, effort: 6, smartSubsample: true })
-    .toFile(absOutput);
+    .toFile(output);
 
-  const after = await getSize(absOutput);
-  if (deleteInput) {
-    await fs.unlink(absInput);
+  const after = await getSize(output);
+  const deletedInput = await removeWithRetries(file);
+
+  return {
+    input: toRelative(file),
+    output: toRelative(output),
+    before,
+    after,
+    deletedInput,
+  };
+}
+
+async function removeWithRetries(file, attempts = 8) {
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    try {
+      await fs.unlink(file);
+      return true;
+    } catch (error) {
+      if (error.code !== "EBUSY" && error.code !== "EPERM") {
+        throw error;
+      }
+
+      if (attempt === attempts - 1) {
+        return false;
+      }
+
+      await delay(250 * (attempt + 1));
+    }
   }
 
-  return { input, output, before, after };
+  return false;
 }
 
-async function optimizeJpg({ input, width, quality }) {
-  const absInput = path.join(root, input);
-  const before = await getSize(absInput);
-  const tempOutput = `${absInput}.tmp`;
-
-  await sharp(absInput)
-    .rotate()
-    .resize({ width, withoutEnlargement: true })
-    .jpeg({ quality, mozjpeg: true })
-    .toFile(tempOutput);
-
-  const after = await getSize(tempOutput);
-  await fs.rename(tempOutput, absInput);
-  return { input, output: input, before, after };
-}
-
-async function optimizeGoogleDirectory() {
-  const dir = path.join(root, "public/Images/google");
-  const entries = await fs.readdir(dir, { withFileTypes: true });
-  const jobs = entries
-    .filter((entry) => entry.isFile() && path.extname(entry.name).toLowerCase() === ".png")
-    .map((entry) => ({
-      input: path.join("public/Images/google", entry.name),
-      output: path.join(
-        "public/Images/google",
-        `${path.basename(entry.name, ".png")}.webp`,
-      ),
-      width: 512,
-      quality: 80,
-      deleteInput: true,
-    }));
-
-  return Promise.all(jobs.map(optimizeWebp));
-}
-
-function formatReport({ input, output, before, after }) {
+function formatReport({ input, output, before, after, deletedInput }) {
   const saved = before - after;
   const percent = before === 0 ? 0 : ((saved / before) * 100).toFixed(1);
-  return `${input} -> ${output} | ${before}B -> ${after}B | saved ${saved}B (${percent}%)`;
+  const deleteStatus = deletedInput ? "deleted source" : "kept source (locked)";
+  return `${input} -> ${output} | ${before}B -> ${after}B | saved ${saved}B (${percent}%) | ${deleteStatus}`;
 }
 
 async function main() {
+  const files = await collectConvertibleFiles(imagesDir);
+
+  if (files.length === 0) {
+    console.log("No PNG/JPG images found in public/Images.");
+    return;
+  }
+
   const results = [];
-  results.push(...(await Promise.all(webpJobs.map(optimizeWebp))));
-  results.push(...(await optimizeGoogleDirectory()));
-  results.push(...(await Promise.all(jpgJobs.map(optimizeJpg))));
+  for (const file of files) {
+    results.push(await convertToWebp(file));
+  }
 
   for (const result of results) {
     console.log(formatReport(result));
