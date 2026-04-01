@@ -1,8 +1,43 @@
-"use client";
+import StructuredData from "@/components/StructuredData";
+import {
+  buildBreadcrumbSchema,
+  buildItemListSchema,
+  buildWebPageSchema,
+  createPageMetadata,
+} from "@/lib/seo";
+import { servicePages } from "@/lib/site";
+
+export const metadata = createPageMetadata({
+  title: "Dịch vụ may gia công và đồng phục",
+  description:
+    "Khám phá các dịch vụ may gia công thời trang, đồng phục, may mẫu và tư vấn chất liệu của xưởng may Lan Chuẩn.",
+  path: "/services",
+  keywords: [
+    "dịch vụ may gia công",
+    "may đồng phục doanh nghiệp",
+    "may mẫu",
+    "tư vấn chất liệu vải",
+  ],
+});
 
 export default function ServicesPage() {
+  const serviceSchemas = [
+    buildWebPageSchema({
+      title: "Dịch vụ may gia công và đồng phục",
+      description:
+        "Trang dịch vụ tổng hợp các nhóm giải pháp may gia công, đồng phục, may mẫu và tư vấn chất liệu của Lan Chuẩn.",
+      path: "/services",
+    }),
+    buildBreadcrumbSchema([
+      { name: "Trang chủ", path: "/" },
+      { name: "Dịch vụ", path: "/services" },
+    ]),
+    buildItemListSchema("Danh mục dịch vụ may mặc", servicePages, "Service"),
+  ];
+
   return (
     <>
+      <StructuredData data={serviceSchemas} />
       
 <main className="pt-24">
 {/*  Hero Header  */}
@@ -100,7 +135,7 @@ export default function ServicesPage() {
 {/*  Portfolio Item 1  */}
 <div className="group cursor-pointer">
 <div className="relative aspect-[3/4] overflow-hidden bg-surface-container-high rounded-xl mb-6">
-<img alt="Công sở cao cấp" className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" data-alt="Close up of a professionally tailored navy blue blazer with precise stitching and high-quality fabric texture on a mannequin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO8LJnBFKlRwm4zt3-hWmaKqyg5GC8VHeXIYs1EAH1osdEmlxCm13EHwXbYkmZ0Yg0nu4wJNmsZ1nU0GoNlEZ4lfM-GSGGhDKidErwkqLYaV2qHMglo1Kheyh3yVs7M9jdkdryXu4ANi_atWcbwS0AqAyb5rT134dQvwex7pemW-9Tb6zjkqc5romdavhhizaUzRE58_EGYGZye4B-GGOon84H4qTMeRFbEr4G5wBn5dBQwT9KKIB9b0M3HZptFo7p0sa4y7jsXrg"/>
+<img alt="Đồng phục công sở cao cấp do Lan Chuẩn sản xuất" className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" src="/Images/dongphucongso.png"/>
 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span className="bg-white/90 backdrop-blur text-primary px-4 py-2 rounded-full font-label text-xs font-bold tracking-widest uppercase">Xem Chi Tiết</span>
 </div>
@@ -111,7 +146,7 @@ export default function ServicesPage() {
 {/*  Portfolio Item 2  */}
 <div className="group cursor-pointer">
 <div className="relative aspect-[3/4] overflow-hidden bg-surface-container-high rounded-xl mb-6">
-<img alt="Thời trang xuất khẩu" className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" data-alt="Elegant minimalist fashion photoshoot featuring high-quality linen dress with delicate pleated details in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQz12-tg0e-MH-EG_q2QGtmxje0FjGcYF6UOvnX_q0juD0yayK4Vx-FNzNwl5KKKE3f1KR-g3PXa477sEw_Ua-ZrGXUoukA4YwiFjjz9qsX50e0NBbeDbmO4ZxtNBu5wjakn1osOxwNOEWvYGcgPyJfCylDipi0WXNU9Vp-n_mp1SxgTPZCAPjhud2jbaj3bIf1LqtG7FyjJNa2acVFP_miePLbudds5qgIJJxfXjXiihgH1-nhzUSngf0m-aFiWW2rqnUS2LnYw4"/>
+<img alt="Mẫu thời trang xuất khẩu do xưởng may Lan Chuẩn thực hiện" className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" src="/Images/thoitrangxuatkhau.png"/>
 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span className="bg-white/90 backdrop-blur text-primary px-4 py-2 rounded-full font-label text-xs font-bold tracking-widest uppercase">Xem Chi Tiết</span>
 </div>
@@ -122,7 +157,7 @@ export default function ServicesPage() {
 {/*  Portfolio Item 3  */}
 <div className="group cursor-pointer">
 <div className="relative aspect-[3/4] overflow-hidden bg-surface-container-high rounded-xl mb-6">
-<img alt="Sản phẩm đặc thù" className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" data-alt="Macro photography of heavy-duty industrial workwear fabric with reinforced double stitching and functional metallic buttons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLMRQEdovuVEnRNCDV_789ZALuTxwFNb_UFKcALCKiPYckatDhfk_3v2G38_n4uTihgzbNkWWIsO59ghBkBu1x1SN4Wao6871r30jjasVbDFVOq9OBQAuVDp5PsRfUv9aJEOz5LebHhjJfDzjTa4jZzGHiiKe5x931kxE8wtPmClqL80l-Jb5V4KPvAF7ZR9-1GucTnSyWV4IiE7dbmQj0JKDiXBjwXChXWPU7IL4dxhTtloLiTyG4_1f4rcPen7jPpBmZTzhCNYk"/>
+<img alt="Trang phục bảo hộ lao động do Lan Chuẩn gia công" className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" src="/Images/baoholaodong.jpg"/>
 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span className="bg-white/90 backdrop-blur text-primary px-4 py-2 rounded-full font-label text-xs font-bold tracking-widest uppercase">Xem Chi Tiết</span>
 </div>
@@ -138,7 +173,7 @@ export default function ServicesPage() {
 <div className="relative overflow-hidden rounded-3xl bg-primary py-20 px-12 text-center">
 {/*  Subtle texture background  */}
 <div className="absolute inset-0 opacity-10 mix-blend-overlay pointer-events-none">
-<img className="w-full h-full object-cover" data-alt="Soft abstract texture of folded white linen fabric with elegant shadows and light play" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhPvTxACQEwtTybGODxTEwf0Nj6Pj_7IUjsfLhRa4-TXDYzmajaGA-XuNolvXyMDlH0ALfgNLaFWrW96A5zdu33O7z8OSoSWRCNd8ad2EFtVtNrJPK5f5P2EdmkWt--kylM6DN73cqCsLUL38YTS3ztNC0685uM1B7gtmQmapc4RP-QboqERm1eacYv6mwO3T7JpvzPk0hYW6EvmiXhgT8lMN1TfFSVIq1JBtD8pMrdE89QoP376jULxSMe49FGiFNGiIaG6S5Z0U"/>
+<img alt="Texture vải linen trắng dùng làm nền cho khối CTA dịch vụ" className="w-full h-full object-cover" data-alt="Soft abstract texture of folded white linen fabric with elegant shadows and light play" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhPvTxACQEwtTybGODxTEwf0Nj6Pj_7IUjsfLhRa4-TXDYzmajaGA-XuNolvXyMDlH0ALfgNLaFWrW96A5zdu33O7z8OSoSWRCNd8ad2EFtVtNrJPK5f5P2EdmkWt--kylM6DN73cqCsLUL38YTS3ztNC0685uM1B7gtmQmapc4RP-QboqERm1eacYv6mwO3T7JpvzPk0hYW6EvmiXhgT8lMN1TfFSVIq1JBtD8pMrdE89QoP376jULxSMe49FGiFNGiIaG6S5Z0U"/>
 </div>
 <div className="relative z-10">
 <h2 className="font-headline text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">Sẵn sàng để nâng tầm <br className="hidden md:block"/> thương hiệu của bạn?</h2>

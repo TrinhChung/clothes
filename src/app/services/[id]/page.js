@@ -1,11 +1,20 @@
+import { createPageMetadata } from "@/lib/seo";
+import { getServicePageById, servicePages } from "@/lib/site";
+
 // Server component with static params
 export async function generateStaticParams() {
-  return [
-    { id: "may-gia-cong" },
-    { id: "dong-phuc" },
-    { id: "may-mau" },
-    { id: "tu-van-vai" },
-  ];
+  return servicePages.map(({ id }) => ({ id }));
+}
+
+export function generateMetadata({ params }) {
+  const service = getServicePageById(params.id);
+
+  return createPageMetadata({
+    title: service.name,
+    description: service.description,
+    path: service.path,
+    index: false,
+  });
 }
 
 export default function ServiceDetailPage() {

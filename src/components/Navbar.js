@@ -9,21 +9,21 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   const navLinks = [
     { href: "/", label: "Trang chủ" },
     { href: "/about", label: "Giới thiệu" },
     { href: "/services", label: "Dịch vụ" },
     { href: "/products", label: "Sản phẩm" },
-    { href: "/about#contact", label: "Liên hệ" },
+    { href: "/contact", label: "Liên hệ" },
   ];
+
+  const toggleMenu = () => {
+    setIsMenuOpen((current) => !current);
+  };
 
   const isActive = (href) => {
     if (href === "/") return pathname === "/";
-    return pathname.startsWith(href.split("#")[0]);
+    return pathname.startsWith(href);
   };
 
   const activeCls =
@@ -32,9 +32,12 @@ export default function Navbar() {
     "text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-300 transition-colors text-base font-medium font-body border-b-2 border-transparent pb-1";
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
-      <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-        <Link href="/" className="flex items-center gap-4 text-3xl font-bold tracking-tight text-primary dark:text-white font-headline">
+    <nav className="fixed top-0 z-50 w-full bg-white/80 shadow-sm backdrop-blur-xl dark:bg-slate-950/80 dark:shadow-none">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
+        <Link
+          href="/"
+          className="flex items-center gap-4 font-headline text-3xl font-bold tracking-tight text-primary dark:text-white"
+        >
           <Image
             src="/Images/logo.png"
             width={40}
@@ -46,8 +49,7 @@ export default function Navbar() {
           Fabricon
         </Link>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden items-center space-x-8 md:flex">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
@@ -61,27 +63,22 @@ export default function Navbar() {
 
         <div className="hidden md:block">
           <Link
-            href="/about#contact"
-            className="bg-primary text-on-primary px-6 py-2.5 rounded-md font-headline font-semibold text-base hover:scale-95 duration-200 ease-in-out transition-all"
+            href="/contact"
+            className="rounded-md bg-primary px-6 py-2.5 font-headline text-base font-semibold text-on-primary transition-all duration-200 ease-in-out hover:scale-95"
           >
             Yêu cầu báo giá
           </Link>
         </div>
 
-        {/* Mobile Navbar toggle */}
-        <button
-          className="md:hidden text-primary"
-          onClick={toggleMenu}
-        >
+        <button className="text-primary md:hidden" onClick={toggleMenu}>
           <span className="material-symbols-outlined text-3xl">menu</span>
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } md:hidden absolute top-full left-0 w-full bg-white dark:bg-slate-900 p-4 shadow-lg border-t border-slate-100 dark:border-slate-800`}
+        } absolute top-full left-0 w-full border-t border-slate-100 bg-white p-4 shadow-lg dark:border-slate-800 dark:bg-slate-900 md:hidden`}
       >
         <div className="flex flex-col space-y-1 font-body">
           {navLinks.map(({ href, label }) => (
@@ -91,17 +88,17 @@ export default function Navbar() {
               onClick={toggleMenu}
               className={
                 isActive(href)
-                  ? "text-primary font-bold border-l-4 border-primary pl-3 py-2 bg-surface-container-low block"
-                  : "text-slate-600 dark:text-slate-300 pl-3 py-2 hover:text-primary hover:bg-surface-container-low block border-l-4 border-transparent transition-colors"
+                  ? "block border-l-4 border-primary bg-surface-container-low py-2 pl-3 font-bold text-primary"
+                  : "block border-l-4 border-transparent py-2 pl-3 text-slate-600 transition-colors hover:bg-surface-container-low hover:text-primary dark:text-slate-300"
               }
             >
               {label}
             </Link>
           ))}
           <Link
-            href="/about#contact"
+            href="/contact"
             onClick={toggleMenu}
-            className="bg-primary text-on-primary px-6 py-3 mt-4 rounded-md font-headline font-semibold text-base w-full text-center block"
+            className="mt-4 block w-full rounded-md bg-primary px-6 py-3 text-center font-headline text-base font-semibold text-on-primary"
           >
             Yêu cầu báo giá
           </Link>
