@@ -1,3 +1,4 @@
+import Link from "next/link";
 import StructuredData from "@/components/StructuredData";
 import {
   buildBreadcrumbSchema,
@@ -66,7 +67,7 @@ export default function ServicesPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/20 overflow-hidden rounded-xl shadow-sm">
               {/*  Service Card 1  */}
-              <div className="bg-surface-container-lowest p-10 flex flex-col justify-between group transition-all duration-300 hover:bg-slate-50/50 dark:hover:bg-slate-800/50">
+              <Link href="/services/may-gia-cong" className="bg-surface-container-lowest p-10 flex flex-col justify-between group no-underline transition-all duration-300 hover:bg-slate-50/50 dark:hover:bg-slate-800/50">
                 <div>
                   <span className="material-symbols-outlined text-4xl text-secondary mb-6 block" data-icon="apparel">apparel</span>
                   <h3 className="font-headline text-2xl font-bold text-primary mb-4">May gia công thời trang</h3>
@@ -78,9 +79,9 @@ export default function ServicesPage() {
                     <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span> Kiểm soát QC 100% sản phẩm</li>
                   </ul>
                 </div>
-              </div>
+              </Link>
               {/*  Service Card 2  */}
-              <div className="bg-surface-container-lowest p-10 flex flex-col justify-between group transition-all duration-300 hover:bg-slate-50/50 dark:hover:bg-slate-800/50">
+              <Link href="/services/dong-phuc" className="bg-surface-container-lowest p-10 flex flex-col justify-between group no-underline transition-all duration-300 hover:bg-slate-50/50 dark:hover:bg-slate-800/50">
                 <div>
                   <span className="material-symbols-outlined text-4xl text-secondary mb-6 block" data-icon="groups">groups</span>
                   <h3 className="font-headline text-2xl font-bold text-primary mb-4">Sản xuất đồng nghiệp</h3>
@@ -92,9 +93,9 @@ export default function ServicesPage() {
                     <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span> In thêu logo sắc nét theo yêu cầu</li>
                   </ul>
                 </div>
-              </div>
+              </Link>
               {/*  Service Card 3  */}
-              <div className="bg-surface-container-lowest p-10 flex flex-col justify-between group transition-all duration-300 hover:bg-slate-50/50 dark:hover:bg-slate-800/50">
+              <Link href="/services/may-mau" className="bg-surface-container-lowest p-10 flex flex-col justify-between group no-underline transition-all duration-300 hover:bg-slate-50/50 dark:hover:bg-slate-800/50">
                 <div>
                   <span className="material-symbols-outlined text-4xl text-secondary mb-6 block" data-icon="content_cut">content_cut</span>
                   <h3 className="font-headline text-2xl font-bold text-primary mb-4">May mẫu &amp; may theo yêu cầu</h3>
@@ -106,9 +107,9 @@ export default function ServicesPage() {
                     <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span> Chỉnh sửa mẫu đến khi hài lòng</li>
                   </ul>
                 </div>
-              </div>
+              </Link>
               {/*  Service Card 4  */}
-              <div className="bg-surface-container-lowest p-10 flex flex-col justify-between group transition-all duration-300 hover:bg-slate-50/50 dark:hover:bg-slate-800/50">
+              <Link href="/services/tu-van-vai" className="bg-surface-container-lowest p-10 flex flex-col justify-between group no-underline transition-all duration-300 hover:bg-slate-50/50 dark:hover:bg-slate-800/50">
                 <div>
                   <span className="material-symbols-outlined text-4xl text-secondary mb-6 block" data-icon="palette">palette</span>
                   <h3 className="font-headline text-2xl font-bold text-primary mb-4">Tư vấn vải &amp; thiết kế</h3>
@@ -120,7 +121,7 @@ export default function ServicesPage() {
                     <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span> Cập nhật xu hướng vải mới nhất</li>
                   </ul>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

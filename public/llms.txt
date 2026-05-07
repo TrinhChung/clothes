@@ -1,0 +1,37 @@
+# Xưởng may Lan Chuẩn / Fabricon
+
+Xưởng may Lan Chuẩn là website giới thiệu dịch vụ gia công may mặc B2B tại Việt Nam. Website cung cấp thông tin về may gia công thời trang, may đồng phục doanh nghiệp, may mẫu, phát triển rập, tư vấn chất liệu vải, sản phẩm may mặc và thông tin liên hệ đặt hàng.
+
+## Site Identity
+
+- Canonical origin: https://fabricon.noirsteed.com
+- Language: vi-VN
+- Business type: garment manufacturer, sewing workshop, uniform supplier, apparel sample production
+- Primary contact phone: +84 965 628 195
+- Email: chungtrinh2k2@gmail.com
+- Zalo: https://zalo.me/+84965628195
+
+## Public Pages
+
+- Home: https://fabricon.noirsteed.com/
+- About: https://fabricon.noirsteed.com/about
+- Services overview: https://fabricon.noirsteed.com/services
+- Fashion manufacturing: https://fabricon.noirsteed.com/services/may-gia-cong
+- Corporate uniforms: https://fabricon.noirsteed.com/services/dong-phuc
+- Sample making and pattern development: https://fabricon.noirsteed.com/services/may-mau
+- Fabric consulting: https://fabricon.noirsteed.com/services/tu-van-vai
+- Products: https://fabricon.noirsteed.com/products
+- Careers: https://fabricon.noirsteed.com/careers
+- Blog: https://fabricon.noirsteed.com/blog
+- Contact: https://fabricon.noirsteed.com/contact
+
+## Machine-Readable Files
+
+- Sitemap: https://fabricon.noirsteed.com/sitemap.xml
+- Robots: https://fabricon.noirsteed.com/robots.txt
+
+## Content Notes For AI Agents
+
+- The site is statically rendered by Next.js, so the main page content is available in HTML.
+- Use the sitemap for the canonical list of indexable URLs.
+- Product and service details are intended for business buyers looking for garment production, uniforms, sample development, fabric consulting, and OEM/ODM-style apparel manufacturing.
