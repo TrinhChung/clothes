@@ -1,6 +1,8 @@
 import { createPageMetadata } from "@/lib/seo";
 import { getServicePageById, servicePages } from "@/lib/site";
 
+export const dynamicParams = false;
+
 // Server component with static params
 export async function generateStaticParams() {
   return servicePages.map(({ id }) => ({ id }));
@@ -13,11 +15,12 @@ export function generateMetadata({ params }) {
     title: service.name,
     description: service.description,
     path: service.path,
-    index: false,
   });
 }
 
-export default function ServiceDetailPage() {
+export default function ServiceDetailPage({ params }) {
+  const service = getServicePageById(params.id);
+
   return (
     <div className="relative">
 {/*  SideNavBar  */}
@@ -58,10 +61,10 @@ export default function ServiceDetailPage() {
 </div>
 <div className="relative z-10 px-8 md:px-16 max-w-4xl">
 <h1 className="text-5xl md:text-7xl font-black text-white font-headline leading-tight tracking-tighter mb-6">
-                    Dịch vụ May mặc &amp; <br/><span className="text-secondary">Gia công Chuyên nghiệp</span>
+                    {service.name}
 </h1>
 <p className="text-xl text-on-primary-container font-body leading-relaxed mb-8 max-w-2xl">
-                    Nâng tầm thương hiệu thời trang của bạn với quy trình sản xuất hiện đại. Lan Chuẩn tự hào đáp ứng mọi quy mô đơn hàng từ những bộ sưu tập boutique tinh tế đến các đơn hàng xuất khẩu số lượng lớn.
+                    {service.description}
                 </p>
 <div className="flex flex-wrap gap-4">
 <button className="bg-secondary hover:bg-on-secondary-container text-white px-8 py-4 rounded-md font-headline font-bold uppercase transition-all flex items-center gap-2">

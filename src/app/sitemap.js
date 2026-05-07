@@ -1,4 +1,4 @@
-import { siteConfig } from "@/lib/site";
+import { servicePages, siteConfig } from "@/lib/site";
 
 const publicRoutes = [
   { path: "/", priority: 1, changeFrequency: "weekly" },
@@ -8,6 +8,11 @@ const publicRoutes = [
   { path: "/careers", priority: 0.7, changeFrequency: "weekly" },
   { path: "/blog", priority: 0.8, changeFrequency: "monthly" },
   { path: "/contact", priority: 0.8, changeFrequency: "monthly" },
+  ...servicePages.map((service) => ({
+    path: service.path,
+    priority: 0.75,
+    changeFrequency: "monthly",
+  })),
 ];
 
 export default function sitemap() {
